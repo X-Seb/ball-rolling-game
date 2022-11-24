@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class playerVictory : MonoBehaviour
+{
+    [Header("Scripts: ")]
+    [SerializeField] private Level _level;
+    [SerializeField] private GameTimer _gameTimer;
+    [SerializeField] private StarManager _starManager;
+    public void PlayerWon()
+    {
+        Debug.Log("The player just won the game!");
+        AudioSingleton.Instance.PlayVictorySound();
+
+        //Save the fact that the player just finished this level and which stars they just collected
+        PlayerPrefs.SetInt("Level_" + _level.levelBuildIndex.ToString() + "_Completed", 1);
+        _starManager.LevelComplete();
+
+        //Record the player's time to complete the level, since they never finished it before
+        if (!PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime"))
+        {
+            PlayerPrefs.SetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime", _gameTimer._totalElapsedTime);
+        }
+
+        //If the player already completed the level and this new time is faster than the old time: change the fastest time to match the new time
+        else if (PlayerPrefs.GetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime", -1) > 
+            _gameTimer._totalElapsedTime)
+        {
+            PlayerPrefs.SetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime", _gameTimer._totalElapsedTime);
+        }
+
+        //Transition to the victory UI and corresponding GameState
+        GameManager.instance.SetGameState(GameManager.GameState.FINISHED_LEVEL_TRANSITION);
+        UIManager.instance.PlayerWon();
+        AudioSingleton.Instance.PlayMainMenuMusic();
+        StartCoroutine(WaitForAnimation());
+    }
+
+    private IEnumerator WaitForAnimation()
+    {
+        yield return new WaitForSeconds(2);
+        GameManager.instance.SetGameState(GameManager.GameState.PLAYER_FINISHED_LEVEL);
+    }
+}
