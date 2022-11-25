@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 # Remove the DS_Store files on macOS
 .DS_Store
+ball-rolling-game/Assets/.DS_Store
