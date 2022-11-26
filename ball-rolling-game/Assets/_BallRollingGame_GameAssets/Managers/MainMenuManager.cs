@@ -10,6 +10,7 @@ public class MainMenuManager : MonoBehaviour
     public GameObject levelSelectionMenu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
+    public GameObject howToPlayMenu;
     [Header("Text: ")]
     [SerializeField] private TextMeshProUGUI _continueText;
 
@@ -79,6 +80,20 @@ public class MainMenuManager : MonoBehaviour
         AudioSingleton.Instance.PlayButtonSound();
         mainMenu.SetActive(true);
         levelSelectionMenu.SetActive(false);
+    }
+
+    public void HowToPlayButton()
+    {
+        AudioSingleton.Instance.PlayButtonSound();
+        mainMenu.SetActive(false);
+        howToPlayMenu.SetActive(true);
+    }
+
+    public void HowToPlayBackButton()
+    {
+        AudioSingleton.Instance.PlayButtonSound();
+        mainMenu.SetActive(true);
+        howToPlayMenu.SetActive(false);
     }
 
     public void LeavingScene()
