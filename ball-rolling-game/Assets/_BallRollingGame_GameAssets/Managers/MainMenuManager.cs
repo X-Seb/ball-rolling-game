@@ -21,6 +21,7 @@ public class MainMenuManager : MonoBehaviour
         levelSelectionMenu.SetActive(false);
         settingsMenu.SetActive(false);
         creditsMenu.SetActive(false);
+        howToPlayMenu.SetActive(false);
         ChangeContinueButtonText();
     }
 
