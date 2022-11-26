@@ -2839,11 +2839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ce74817ab1d4640ace0a896c62f19f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftButton: {fileID: 0}
-  _rightButton: {fileID: 0}
-  _allLevelInfoDisplays: {fileID: 0}
-  _duration: 2
-  _ease: 2
 --- !u!1 &1268850505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,7 +3395,7 @@ MonoBehaviour:
   m_CaptionText: {fileID: 1384073148}
   m_CaptionImage: {fileID: 0}
   m_Placeholder: {fileID: 0}
-  m_ItemText: {fileID: 1384073148}
+  m_ItemText: {fileID: 489214477}
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
