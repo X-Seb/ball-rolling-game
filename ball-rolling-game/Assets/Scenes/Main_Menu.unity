@@ -3887,8 +3887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ea65123e102364db085bdb9fe2ab76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _volume: 0
-  _volumeSlider: {fileID: 0}
+  mainMixer: {fileID: 24100000, guid: ea89764504f1d4b38ac1c8b43ffebfc7, type: 2}
 --- !u!1 &1889959461
 GameObject:
   m_ObjectHideFlags: 0
