@@ -14,12 +14,6 @@ public class PlayerCollisionManager : MonoBehaviour
     [SerializeField] private Rigidbody _playerRb;
     [SerializeField] private GameObject _player;
 
-    [Header("Others: ")]
-    [SerializeField] private bool _isOnPlatform = false;
-
-    [Header("Platform stuff: (Make sure the Rigidbody is set to Kinematic")]
-    [SerializeField] private Rigidbody _platformRb;
-
     private void Start()
     {
         _playerRb = GetComponent<Rigidbody>();
@@ -38,25 +32,6 @@ public class PlayerCollisionManager : MonoBehaviour
             GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
             AudioSingleton.Instance.PlayCollisionSound();
-        }
-
-        if (collision.gameObject.CompareTag("Moving Platform"))
-        {
-            _isOnPlatform = true;
-        }
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        _isOnPlatform = true;
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Moving Platform"))
-        {
-            _platformRb = null;
-            _isOnPlatform = false;
         }
     }
 
