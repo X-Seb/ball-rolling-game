@@ -7,7 +7,6 @@ public class playerVictory : MonoBehaviour
     [Header("Scripts: ")]
     [SerializeField] private Level _level;
     [SerializeField] private GameTimer _gameTimer;
-    [SerializeField] private StarManager _starManager;
     public void PlayerWon()
     {
         Debug.Log("The player just won the game!");

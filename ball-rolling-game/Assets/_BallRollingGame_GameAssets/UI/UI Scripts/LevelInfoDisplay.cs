@@ -25,10 +25,6 @@ public class LevelInfoDisplay : MonoBehaviour
     [SerializeField] private Color _colorBar4 = new Color(255, 51, 0);
     [SerializeField] private Color _colorBar5 = new Color(255, 51, 0);
 
-    [Header("Stars: ")]
-    [SerializeField] private Image _star1;
-    [SerializeField] private Image _star2;
-    [SerializeField] private Image _star3;
     [Header("Other colors: ")]
     [SerializeField] private Color _starCollected = new Color(255, 221, 97);
     [SerializeField] private Color _starUncollected = new Color(100, 110, 135);
@@ -42,7 +38,6 @@ public class LevelInfoDisplay : MonoBehaviour
     {
         SetButtonActive();
         SetText();
-        SetStarsColor();
         SetDifficultyColors();
         SetTimeColor();
     }
@@ -122,34 +117,6 @@ public class LevelInfoDisplay : MonoBehaviour
                 _bar4.color = _barDeactivated;
                 _bar5.color = _barDeactivated;
                 break;
-        }
-    }
-
-    private void SetStarsColor()
-    {
-        if (_level.star1)
-        {
-            _star1.color = _starCollected;
-        }
-        else
-        {
-            _star1.color = _starUncollected;
-        }
-        if (_level.star2)
-        {
-            _star2.color = _starCollected;
-        }
-        else
-        {
-            _star2.color = _starUncollected;
-        }
-        if (_level.star3)
-        {
-            _star3.color = _starCollected;
-        }
-        else
-        {
-            _star3.color = _starUncollected;
         }
     }
 

@@ -10,6 +10,7 @@ public class StartingScreenDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _levelNameText;
     [SerializeField] private TextMeshProUGUI _levelDescriptionText;
     [SerializeField] private TextMeshProUGUI _timeText;
+    [SerializeField] private TextMeshProUGUI _fastestTimeText;
 
     [Header("The difficulty bars: ")]
     [SerializeField] private Image _bar1;
@@ -24,14 +25,6 @@ public class StartingScreenDisplay : MonoBehaviour
     [SerializeField] private Color _colorBar3 = new Color(255, 153, 0);
     [SerializeField] private Color _colorBar4 = new Color(255, 51, 0);
     [SerializeField] private Color _colorBar5 = new Color(255, 51, 0);
-
-    [Header("Stars: ")]
-    [SerializeField] private Image _star1;
-    [SerializeField] private Image _star2;
-    [SerializeField] private Image _star3;
-    [Header("Other colors: ")]
-    [SerializeField] private Color _starCollected = new Color(255, 221, 97);
-    [SerializeField] private Color _starUncollected = new Color(100, 110, 135);
     [SerializeField] private Color _barDeactivated = new Color(60, 71, 73);
     [Header("Others: ")]
     [SerializeField] private Image _timeBackground;
@@ -42,16 +35,27 @@ public class StartingScreenDisplay : MonoBehaviour
     {
         SetText();
         SetDifficultyColors();
-        SetStarsColor();
+        //Set fastest time
         SetTimeColor();
     }
 
     private void SetText()
     {
-        //Set the level name, description, and the time to complete it
+        //Set the level name, description, and the time to complete it + fastest time
         _levelNameText.text = _level.levelName;
         _levelDescriptionText.text = _level.levelDescription;
         _timeText.text = (_level.timeToCompleteLevel).ToString() + " seconds";
+
+        //Checks if the player already finished the level before changing the fastest time
+        if (PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex + "_FastestTime"))
+        {
+            var text = Mathf.Round(PlayerPrefs.GetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime")).ToString() + " Seconds";
+            _fastestTimeText.text = text;
+        }
+        else
+        {
+            _fastestTimeText.text = "--";
+        }
     }
 
     private void SetDifficultyColors()
@@ -101,34 +105,6 @@ public class StartingScreenDisplay : MonoBehaviour
                 _bar4.color = _barDeactivated;
                 _bar5.color = _barDeactivated;
                 break;
-        }
-    }
-
-    private void SetStarsColor()
-    {
-        if (_level.star1)
-        {
-            _star1.color = _starCollected;
-        }
-        else
-        {
-            _star1.color = _starUncollected;
-        }
-        if (_level.star2)
-        {
-            _star2.color = _starCollected;
-        }
-        else
-        {
-            _star2.color = _starUncollected;
-        }
-        if (_level.star3)
-        {
-            _star3.color = _starCollected;
-        }
-        else
-        {
-            _star3.color = _starUncollected;
         }
     }
 
