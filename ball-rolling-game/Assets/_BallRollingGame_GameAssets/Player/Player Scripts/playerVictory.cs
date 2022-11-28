@@ -28,6 +28,8 @@ public class playerVictory : MonoBehaviour
             PlayerPrefs.SetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime", _gameTimer._totalElapsedTime);
         }
 
+        PlayerPrefs.Save();
+
         //Transition to the victory UI and corresponding GameState
         GameManager.instance.SetGameState(GameManager.GameState.FINISHED_LEVEL_TRANSITION);
         UIManager.instance.PlayerWon();

@@ -11,13 +11,14 @@ public class GameTimer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _timeText;
     [SerializeField] private Image _background;
     [SerializeField] private Level _level;
-    [Header("For reference only: ")]
-    [SerializeField] float _totalTime;
+    [Header("This value is used by other scripts: ")]
     public float _totalElapsedTime = 0.0f;
+    [Header("Other variables:")]
+    [SerializeField] private float _timeLeft;
 
     private void Start()
     {
-        _totalTime = _level.timeToCompleteLevel;
+        _timeLeft = _level.timeToCompleteLevel;
         _totalElapsedTime = 0.0f;
     }
 
@@ -25,25 +26,25 @@ public class GameTimer : MonoBehaviour
     {
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
-            _totalTime -= Time.deltaTime;
+            _timeLeft -= Time.deltaTime;
             _totalElapsedTime += Time.deltaTime;
         }
 
-        _timeText.text = Mathf.Floor(_totalTime).ToString();
+        _timeText.text = Mathf.Floor(_timeLeft).ToString();
 
-        if (_totalTime >= 60)
+        if (_timeLeft >= 60)
         {
             _background.color = Color.green;
         }
-        if (_totalTime < 60 && _totalTime > 30)
+        if (_timeLeft < 60 && _timeLeft > 30)
         {
             _background.color = Color.yellow;
         }
-        if (_totalTime < 30 && _totalTime > 0)
+        if (_timeLeft < 30 && _timeLeft > 0)
         {
             _background.color = Color.red;  
         }
-        if (_totalTime <= 0)
+        if (_timeLeft <= 0)
         {
             playerGameOver.PlayerDied();
         }

@@ -1,29 +1,38 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
     [Header("Canvases: ")]
-    public GameObject startingCanvas;
+    [SerializeField] private GameObject startingCanvas;
     public GameObject mainCanvas;
     [Header("UI Menus: ")]
-    public GameObject gameStartingCountdownUI;
-    public GameObject gameOverUI;
-    public GameObject victoryUI;
-    public GameObject pauseUI;
-    public GameObject gameUI;
+    [SerializeField] private GameObject gameStartingCountdownUI;
+    [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private GameObject pauseUI;
+    [SerializeField] private GameObject gameUI;
+    [Header("UI elements:")]
+    [SerializeField] private TextMeshProUGUI _currentTimeText;
+    [SerializeField] private TextMeshProUGUI _bestTimeText;
+    [SerializeField] private TextMeshProUGUI _funnyText;
     [Header("Scripts: ")]
-    public PauseManager pauseManager;
+    [SerializeField] private PauseManager pauseManager;
+    [SerializeField] private GameTimer gameTimer;
     [Header("Animators: ")]
-    public Animator startingScreenAnimator;
-    public Animator gameStartingCountdownAnimator;
-    public Animator gameOverUIAnimator;
-    public Animator victoryUIAnimator;
+    [SerializeField] private Animator startingScreenAnimator;
+    [SerializeField] private Animator gameStartingCountdownAnimator;
+    [SerializeField] private Animator gameOverUIAnimator;
+    [SerializeField] private Animator victoryUIAnimator;
     [Header("Other information:")]
     [SerializeField] private int _lastLevelBuildIndex;
+    [SerializeField] private string[] _funnyTextOptions;
+    [SerializeField] private Level _level;
 
     private void Awake()
     {
@@ -136,6 +145,19 @@ public class UIManager : MonoBehaviour
     {
         gameUI.SetActive(false);
         victoryUI.SetActive(true);
+        //Change the text informations
+        var text1 = ((Mathf.Round((gameTimer._totalElapsedTime * 100))) / 100).ToString();
+        _currentTimeText.text = text1;
+
+        if (PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex + "_FastestTime"))
+        {
+            var num = (PlayerPrefs.GetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime"));
+            var text2 = ((Mathf.Round((num * 100))) / 100).ToString();
+            _bestTimeText.text = text2;
+        }
+
+        RandomizeFunnyText();
+
         //Start the animation
         victoryUIAnimator.SetTrigger("PlayerWon");
     }
@@ -143,6 +165,12 @@ public class UIManager : MonoBehaviour
     public void ChangingScene()
     {
         mainCanvas.SetActive(false);
+    }
+
+    private void RandomizeFunnyText()
+    {
+        int index = Random.Range(0, _funnyTextOptions.Length);
+        _funnyText.text = _funnyTextOptions[index];
     }
 
     private IEnumerator SceneJustLoaded()
