@@ -7,7 +7,6 @@ TagManager:
   - Enemy
   - Win Condition
   - Moving Platform
-  - Star
   - Movable Object
   layers:
   - Default
