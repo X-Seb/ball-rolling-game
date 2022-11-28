@@ -607,7 +607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &151339795
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2234,8 +2234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 121.554565, y: 0}
-  m_SizeDelta: {x: 220, y: 50}
+  m_AnchoredPosition: {x: 100, y: 0}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564915309
 MonoBehaviour:
@@ -2285,8 +2285,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3072,7 +3072,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1068006365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4858,6 +4858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMixer: {fileID: 24100000, guid: ea89764504f1d4b38ac1c8b43ffebfc7, type: 2}
+  _slider: {fileID: 0}
 --- !u!1 &1889959461
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,8 +5138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the arrow keys or the WASD keys to move in all 4 directions. That's
-    it!
+  m_text: Use the arrow keys or the WASD keys to move in all 4 directions.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 862c89c8281c34646b54c94f1181d12e, type: 2}
   m_sharedMaterial: {fileID: -3692486891236266030, guid: 862c89c8281c34646b54c94f1181d12e,
@@ -6591,8 +6591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 70.088196, y: 0}
-  m_SizeDelta: {x: 120, y: 50}
+  m_AnchoredPosition: {x: 60, y: 0}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3396637899985923262
 MonoBehaviour:
@@ -7381,8 +7381,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

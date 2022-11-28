@@ -11,6 +11,7 @@ public class LevelInfoDisplay : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _levelNameText;
     [SerializeField] private TextMeshProUGUI _timeText;
 
+
     [Header("The difficulty bars: ")]
     [SerializeField] private Image _bar1;
     [SerializeField] private Image _bar2;
@@ -25,9 +26,6 @@ public class LevelInfoDisplay : MonoBehaviour
     [SerializeField] private Color _colorBar4 = new Color(255, 51, 0);
     [SerializeField] private Color _colorBar5 = new Color(255, 51, 0);
 
-    [Header("Other colors: ")]
-    [SerializeField] private Color _starCollected = new Color(255, 221, 97);
-    [SerializeField] private Color _starUncollected = new Color(100, 110, 135);
     [SerializeField] private Color _barDeactivated = new Color(60, 71, 73);
     [Header("Others: ")]
     [SerializeField] private Image _timeBackground;
