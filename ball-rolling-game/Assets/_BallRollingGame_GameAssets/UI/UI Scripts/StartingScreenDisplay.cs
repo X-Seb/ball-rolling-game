@@ -49,7 +49,8 @@ public class StartingScreenDisplay : MonoBehaviour
         //Checks if the player already finished the level before changing the fastest time
         if (PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex + "_FastestTime"))
         {
-            var text = Mathf.Round(PlayerPrefs.GetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime")).ToString() + " Seconds";
+            var num = (PlayerPrefs.GetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime"));
+            var text = ((Mathf.Round((num * 100))) / 100).ToString() + " Seconds";
             _fastestTimeText.text = text;
         }
         else

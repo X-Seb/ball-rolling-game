@@ -10,6 +10,7 @@ public class LevelInfoDisplay : MonoBehaviour
     [Header("Text: ")]
     [SerializeField] private TextMeshProUGUI _levelNameText;
     [SerializeField] private TextMeshProUGUI _timeText;
+    [SerializeField] private TextMeshProUGUI _fastestTimeText;
 
 
     [Header("The difficulty bars: ")]
@@ -67,6 +68,19 @@ public class LevelInfoDisplay : MonoBehaviour
         //Set the level name, description, and the time to complete it
         _levelNameText.text = (_level.levelBuildIndex).ToString() + ": "+ _level.levelName;
         _timeText.text = (_level.timeToCompleteLevel).ToString();
+
+        //Checks if the player already finished the level before changing the fastest time
+        if (PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex + "_FastestTime"))
+        {
+            var num = (PlayerPrefs.GetFloat("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime"));
+            var text = ((Mathf.Round((num * 100))) / 100).ToString();
+
+            _fastestTimeText.text = text;
+        }
+        else
+        {
+            _fastestTimeText.text = "--";
+        }
     }
     private void SetDifficultyColors()
     {
