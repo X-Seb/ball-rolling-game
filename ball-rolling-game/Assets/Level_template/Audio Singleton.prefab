@@ -208,7 +208,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e6ebbf10077e4eb6aebd2161f67ffb2, type: 3}
   - {fileID: 8300000, guid: 2feb4a903195d4f7bb4bf90918c0ae34, type: 3}
   - {fileID: 8300000, guid: 19e11c8cc39c64095b9945f6492fd1d9, type: 3}
-  _sadMusic: {fileID: 0}
+  _sadMusic: {fileID: 8300000, guid: 3743191223aa7884aa5f127d9f41d978, type: 3}
   _sfxVolume: 1
   _musicVolume: 1
 --- !u!1 &4788101608077410660
