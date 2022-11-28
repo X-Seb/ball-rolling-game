@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
     public Animator gameStartingCountdownAnimator;
     public Animator gameOverUIAnimator;
     public Animator victoryUIAnimator;
+    [Header("Other information:")]
+    [SerializeField] private int _lastLevelBuildIndex;
 
     private void Awake()
     {
@@ -96,6 +98,16 @@ public class UIManager : MonoBehaviour
         AudioSingleton.Instance.PlayButtonSound();
         LevelLoader.instance.LoadSceneAsync(0);
     }
+
+    public void LoadNextLevelButton()
+    {
+        AudioSingleton.Instance.PlayButtonSound();
+        if (SceneManager.GetActiveScene().buildIndex != _lastLevelBuildIndex)
+        {
+            LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
     public void PauseGame()
     {
         gameUI.SetActive(false);
@@ -132,6 +144,7 @@ public class UIManager : MonoBehaviour
     {
         mainCanvas.SetActive(false);
     }
+
     private IEnumerator SceneJustLoaded()
     {
         //Plays the animation of the starting screen
@@ -139,6 +152,7 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         GameManager.instance.SetGameState(GameManager.GameState.START_MENU);
     }
+
     private IEnumerator GameStarting()
     {
         mainCanvas.SetActive(true);
