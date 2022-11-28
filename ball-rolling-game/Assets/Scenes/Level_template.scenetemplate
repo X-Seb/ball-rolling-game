@@ -20,6 +20,8 @@ MonoBehaviour:
     each scene.
   preview: {fileID: 4037273567745498617}
   dependencies:
+  - dependency: {fileID: 2100000, guid: ab675e6698bde46fd87143fb0d7580cb, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 6074200387786441611, guid: 73d339b4bb24041e8967bc17f61ae2a6,
       type: 3}
     instantiationMode: 0
@@ -92,8 +94,6 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 12800000, guid: c839255fc8f6b4b4d90bf8c1af9f9bd1, type: 3}
     instantiationMode: 1
-  - dependency: {fileID: 2100000, guid: 769cd526d5bcc434a91d99b90b5888f7, type: 2}
-    instantiationMode: 0
   - dependency: {fileID: 4754037550922113534, guid: 257e8fe58868941418e8dd69a9bb5563,
       type: 3}
     instantiationMode: 0
@@ -128,8 +128,6 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 1491533246057834979, guid: 193ca1d1ffff5479cb458c2b275c3c18,
       type: 3}
-    instantiationMode: 0
-  - dependency: {fileID: 8900000, guid: 03bfcaddd91234c998c9b04c6285f076, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 12800000, guid: 19dd328eb5582c6438828455ca115d92, type: 3}
     instantiationMode: 1
