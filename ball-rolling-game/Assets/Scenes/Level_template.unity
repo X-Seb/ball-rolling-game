@@ -726,7 +726,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3841982463
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
@@ -2275,7 +2275,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
@@ -2648,7 +2648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &629726752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6742,6 +6742,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1340915313620084992, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1340915313819226934, guid: 3457d115098254b7cb0d3111468a5fce,
         type: 3}
       propertyPath: m_Name
@@ -6750,7 +6755,7 @@ PrefabInstance:
     - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
         type: 3}
       propertyPath: funnyTextOptions.Array.size
-      value: 10
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
         type: 3}
@@ -6760,7 +6765,37 @@ PrefabInstance:
     - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
         type: 3}
       propertyPath: funnyTextOptions.Array.data[10]
-      value: get gud
+      value: Don't worry... It's almost done.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: funnyTextOptions.Array.data[11]
+      value: What's the point of reading this?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: funnyTextOptions.Array.data[12]
+      value: Nobody is going to read this... Right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: funnyTextOptions.Array.data[13]
+      value: I challenge you to get up right now and do 20 push ups.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: funnyTextOptions.Array.data[14]
+      value: (^ _ ^)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: funnyTextOptions.Array.data[15]
+      value: I hope you know where you're going...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313819226935, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: funnyTextOptions.Array.data[16]
+      value: Haha yes.
       objectReference: {fileID: 0}
     - target: {fileID: 1340915313819226936, guid: 3457d115098254b7cb0d3111468a5fce,
         type: 3}
@@ -6815,6 +6850,11 @@ PrefabInstance:
     - target: {fileID: 1340915313819226936, guid: 3457d115098254b7cb0d3111468a5fce,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340915313837676480, guid: 3457d115098254b7cb0d3111468a5fce,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
