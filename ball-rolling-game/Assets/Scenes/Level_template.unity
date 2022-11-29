@@ -1379,7 +1379,7 @@ PrefabInstance:
     - target: {fileID: 1339866141980685891, guid: 701d287d8650f4ecb9213c5cffaf879e,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      value: 4143972351
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 701d287d8650f4ecb9213c5cffaf879e, type: 3}
@@ -1534,7 +1534,7 @@ PrefabInstance:
     - target: {fileID: 1339866141980685891, guid: 701d287d8650f4ecb9213c5cffaf879e,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190079
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 701d287d8650f4ecb9213c5cffaf879e, type: 3}
@@ -1985,7 +1985,7 @@ PrefabInstance:
     - target: {fileID: 8618142415424415336, guid: cbba9e7586e5d47a6ac0fdd849f16f4a,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190079
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbba9e7586e5d47a6ac0fdd849f16f4a, type: 3}
@@ -3086,7 +3086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &802638350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5181,7 +5181,7 @@ PrefabInstance:
     - target: {fileID: 8618142415424415336, guid: cbba9e7586e5d47a6ac0fdd849f16f4a,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      value: 4211081215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbba9e7586e5d47a6ac0fdd849f16f4a, type: 3}
@@ -5345,7 +5345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1635703905
 RectTransform:
   m_ObjectHideFlags: 0
