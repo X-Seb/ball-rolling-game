@@ -16,7 +16,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void Start()
     {
-        AudioSingleton.Instance.PlayMainMenuMusic();
+        AudioSingleton.Instance.PlayBackgroundMusic();
         mainMenu.SetActive(true);
         levelSelectionMenu.SetActive(false);
         settingsMenu.SetActive(false);

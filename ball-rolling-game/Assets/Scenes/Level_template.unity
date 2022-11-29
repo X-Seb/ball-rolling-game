@@ -7732,6 +7732,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24300002, guid: ea89764504f1d4b38ac1c8b43ffebfc7,
         type: 2}
+    - target: {fileID: 4788101607811933600, guid: a496b06d776644d16849dbc8f0b50d6a,
+        type: 3}
+      propertyPath: _victoryAudioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: fe79a296241334099b9622427a36a916, type: 3}
     - target: {fileID: 4788101607811933601, guid: a496b06d776644d16849dbc8f0b50d6a,
         type: 3}
       propertyPath: m_RootOrder

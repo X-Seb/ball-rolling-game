@@ -10,8 +10,7 @@ public class AudioSingleton : MonoBehaviour
     [SerializeField] private AudioSource _sfxAudioSource;
     [SerializeField] private AudioSource _musicAudioSource;
 
-    [Header("List of sound clips: ")]
-    [SerializeField] private AudioClip[] _backgroundMusicAudioClips;
+    [Header("List of sound clip lists: ")]
     [SerializeField] private AudioClip[] _explosionAudioClips;
     [SerializeField] private AudioClip[] _victoryAudioClips;
     [SerializeField] private AudioClip[] _buttonAudioClips;
@@ -20,6 +19,7 @@ public class AudioSingleton : MonoBehaviour
 
     [Header("Specific audio clips: ")]
     [SerializeField] private AudioClip _sadMusic;
+    [SerializeField] private AudioClip _levelBackgroundMusic;
 
     [Header("Volume for reference only: ")]
     [SerializeField] private float _sfxVolume = 1.0f;
@@ -59,17 +59,9 @@ public class AudioSingleton : MonoBehaviour
         _sfxAudioSource.PlayOneShot(clip, _sfxVolume);
     }
 
-    public void PlayMainMenuMusic()
+    public void PlayBackgroundMusic()
     {
-        AudioClip music = _backgroundMusicAudioClips[0];
-        _musicAudioSource.clip = music;
-        _musicAudioSource.Play();
-    }
-
-    public void PlayBackgroundMusic(int index)
-    {
-        AudioClip music = _backgroundMusicAudioClips[index];
-        _musicAudioSource.clip = music;
+        _musicAudioSource.clip = _levelBackgroundMusic;
         _musicAudioSource.Play();
     }
 
