@@ -726,7 +726,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4177526783
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
@@ -1379,7 +1379,7 @@ PrefabInstance:
     - target: {fileID: 1339866141980685891, guid: a576860bcb57449ebbafd8d24874056f,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190079
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a576860bcb57449ebbafd8d24874056f, type: 3}
@@ -2648,7 +2648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &629726752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3086,7 +3086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &802638350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5156,7 +5156,7 @@ PrefabInstance:
     - target: {fileID: 8618142415424415336, guid: ea7334fb4a0344bdd81a5ada894cd297,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278190079
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7334fb4a0344bdd81a5ada894cd297, type: 3}
@@ -6926,6 +6926,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Time background
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491533246085981323, guid: 30358dc970e54427ca5ef1713b9eb013,
+        type: 3}
+      propertyPath: m_text
+      value: 'Time limit:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491533246085981323, guid: 30358dc970e54427ca5ef1713b9eb013,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491533246085981323, guid: 30358dc970e54427ca5ef1713b9eb013,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491533246085981332, guid: 30358dc970e54427ca5ef1713b9eb013,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30358dc970e54427ca5ef1713b9eb013, type: 3}
