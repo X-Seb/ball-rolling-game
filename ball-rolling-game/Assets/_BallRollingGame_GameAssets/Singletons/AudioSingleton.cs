@@ -20,10 +20,10 @@ public class AudioSingleton : MonoBehaviour
     [Header("Specific audio clips: ")]
     [SerializeField] private AudioClip _sadMusic;
     [SerializeField] private AudioClip _levelBackgroundMusic;
+    [SerializeField] private AudioClip _victoryBackgroundMusic;
 
     [Header("Volume for reference only: ")]
     [SerializeField] private float _sfxVolume = 1.0f;
-    [SerializeField] private float _musicVolume = 1.0f;
 
     //This makes this class a singleton
     private void Awake()
@@ -49,6 +49,12 @@ public class AudioSingleton : MonoBehaviour
     public void PlaySadMusic()
     {
         _musicAudioSource.clip = _sadMusic;
+        _musicAudioSource.Play();
+    }
+
+    public void PlayVictoryMusic()
+    {
+        _musicAudioSource.clip = _victoryBackgroundMusic;
         _musicAudioSource.Play();
     }
 

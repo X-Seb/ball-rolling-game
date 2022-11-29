@@ -65,7 +65,7 @@ public class UIManager : MonoBehaviour
     public void GameStarted()
     {
         //Only activate the gameUI, so the player can start playing.
-        AudioSingleton.Instance.PlayBackgroundMusic(SceneManager.GetActiveScene().buildIndex);
+        AudioSingleton.Instance.PlayBackgroundMusic();
         mainCanvas.SetActive(true);
         startingCanvas.SetActive(false);
         gameUI.SetActive(true);
