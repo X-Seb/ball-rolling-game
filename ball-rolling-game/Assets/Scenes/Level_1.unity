@@ -6179,6 +6179,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 263896144981853612, guid: 0c6766d326d3e4391856d797763d8bfd,
         type: 3}
+      propertyPath: _level
+      value: 
+      objectReference: {fileID: 11400000, guid: cff8759cda61bd64ab1a3ec1acf8dbcf,
+        type: 2}
+    - target: {fileID: 263896144981853612, guid: 0c6766d326d3e4391856d797763d8bfd,
+        type: 3}
       propertyPath: _gameTimer
       value: 
       objectReference: {fileID: 2047985240}
@@ -7770,7 +7776,7 @@ PrefabInstance:
     - target: {fileID: 7761002867548297467, guid: 953cc4dab6d6d457c8c7845baa38da4a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 32.500652
       objectReference: {fileID: 0}
     - target: {fileID: 7761002867548297467, guid: 953cc4dab6d6d457c8c7845baa38da4a,
         type: 3}
