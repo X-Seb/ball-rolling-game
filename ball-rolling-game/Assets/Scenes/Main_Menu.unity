@@ -7183,6 +7183,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4788101607646475621, guid: 5322ec8ebcb2dd14499152632c2ef717,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ea89764504f1d4b38ac1c8b43ffebfc7,
+        type: 2}
     - target: {fileID: 4788101607811933601, guid: 5322ec8ebcb2dd14499152632c2ef717,
         type: 3}
       propertyPath: m_RootOrder
@@ -7243,6 +7249,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio Singleton
       objectReference: {fileID: 0}
+    - target: {fileID: 4788101608077410650, guid: 5322ec8ebcb2dd14499152632c2ef717,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ea89764504f1d4b38ac1c8b43ffebfc7,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5322ec8ebcb2dd14499152632c2ef717, type: 3}
 --- !u!224 &5064163114910371946
