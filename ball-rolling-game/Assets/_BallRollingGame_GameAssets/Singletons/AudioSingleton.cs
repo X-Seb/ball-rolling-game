@@ -14,7 +14,6 @@ public class AudioSingleton : MonoBehaviour
     [SerializeField] private AudioClip[] _explosionAudioClips;
     [SerializeField] private AudioClip[] _victoryAudioClips;
     [SerializeField] private AudioClip[] _buttonAudioClips;
-    [SerializeField] private AudioClip[] _achievementAudioClips;
     [SerializeField] private AudioClip[] _collisionAudioClips;
 
     [Header("Specific audio clips: ")]

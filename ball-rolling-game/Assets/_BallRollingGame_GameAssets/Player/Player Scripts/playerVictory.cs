@@ -10,8 +10,6 @@ public class playerVictory : MonoBehaviour
     public void PlayerWon()
     {
         Debug.Log("The player just won the game!");
-        AudioSingleton.Instance.PlayVictorySound();
-
         //Save the fact that the player just finished this level and which stars they just collected
         PlayerPrefs.SetInt("Level_" + _level.levelBuildIndex.ToString() + "_Completed", 1);
 
@@ -33,6 +31,7 @@ public class playerVictory : MonoBehaviour
         //Transition to the victory UI and corresponding GameState
         GameManager.instance.SetGameState(GameManager.GameState.FINISHED_LEVEL_TRANSITION);
         UIManager.instance.PlayerWon();
+        AudioSingleton.Instance.PlayVictorySound();
         AudioSingleton.Instance.PlayVictoryMusic();
         StartCoroutine(WaitForAnimation());
     }
