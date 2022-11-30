@@ -3124,7 +3124,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a90c74f3b538d479f9f08d1186f517a1, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -4191,6 +4191,12 @@ GameObject:
 --- !u!4 &1100854688 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 263896144483022423, guid: b1176f7baa2c5433aa26099f05741f9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 263896145533387767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1100854691 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 263896144483022422, guid: b1176f7baa2c5433aa26099f05741f9d,
     type: 3}
   m_PrefabInstance: {fileID: 263896145533387767}
   m_PrefabAsset: {fileID: 0}
@@ -5424,7 +5430,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 33dcd1a5789574966a08c3c64d8e5dc6, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -5504,7 +5510,7 @@ MonoBehaviour:
   gameStartingCountdownAnimator: {fileID: 381210784}
   gameOverUIAnimator: {fileID: 802638351}
   victoryUIAnimator: {fileID: 1635703908}
-  _lastLevelBuildIndex: 0
+  _lastLevelBuildIndex: 7
   _funnyTextOptions:
   - That was pure luck.
   - Cool. Now do it with your eyes closed.
@@ -6062,10 +6068,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b902bffa09e92c840815cab12203a892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGameOver: {fileID: 686542181}
   _timeText: {fileID: 1285018031}
   _background: {fileID: 1882643118}
   _level: {fileID: 0}
+  playerGameOver: {fileID: 686542181}
   _totalElapsedTime: 0
   _timeLeft: 0
 --- !u!1 &2140560191
@@ -6182,6 +6188,11 @@ PrefabInstance:
       propertyPath: _gameTimer
       value: 
       objectReference: {fileID: 2047985240}
+    - target: {fileID: 263896145418353784, guid: b1176f7baa2c5433aa26099f05741f9d,
+        type: 3}
+      propertyPath: playerRB
+      value: 
+      objectReference: {fileID: 1100854691}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1176f7baa2c5433aa26099f05741f9d, type: 3}
 --- !u!1001 &921375148887762896
