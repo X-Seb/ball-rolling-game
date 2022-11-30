@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 
+//This script managed the UI in the main menu scene. It shouldn't be anywhere else.
+//Buttons in the main menu scene call functions from this script.
 public class MainMenuManager : MonoBehaviour
 {
     [Header("Canvases:")]

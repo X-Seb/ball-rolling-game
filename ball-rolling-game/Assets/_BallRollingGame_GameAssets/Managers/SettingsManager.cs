@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+//This script managed the settings menu.
+//It sets the global volume to whatever the player inputed in the slider.
 public class SettingsManager : MonoBehaviour
 {
     public AudioMixer mainMixer;

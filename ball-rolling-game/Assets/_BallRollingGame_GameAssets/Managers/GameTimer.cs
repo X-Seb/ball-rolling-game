@@ -4,13 +4,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script counts how much time you spend in the level scene (while you're playing the game).
+//Other scipts get information from the public variables in this script.
 public class GameTimer : MonoBehaviour
 {
-    public PlayerGameOver playerGameOver;
     [Header("Variables relative to display the time: ")]
     [SerializeField] private TextMeshProUGUI _timeText;
     [SerializeField] private Image _background;
     [SerializeField] private Level _level;
+    [Header("Scripts: ")]
+    public PlayerGameOver playerGameOver;
     [Header("This value is used by other scripts: ")]
     public float _totalElapsedTime = 0.0f;
     [Header("Other variables:")]
@@ -24,6 +27,7 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
+        //Only count the time if you're currently playing the game
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
             _timeLeft -= Time.deltaTime;

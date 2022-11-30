@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//This static script manages the state of the game with an enum.
+//It allows other scripts to know what's the game state at any time.
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance;
@@ -38,6 +40,13 @@ public class GameManager : MonoBehaviour
         {
             SetGameState(GameState.MENU_STARTING_TRANSITION);
         }
+
+        //Unlocks the first level if you never played before
+        if (!PlayerPrefs.HasKey("Level_1_Unlocked"))
+        {
+            PlayerPrefs.SetInt("Level_1_Unlocked", 1);
+            PlayerPrefs.Save();
+        }
     }
 
     public void SetGameState(GameState newGameState)
@@ -53,7 +62,8 @@ public class GameManager : MonoBehaviour
 
     public void GameStarted()
     {
-        Debug.Log("Game started! The player can now move around.");
         SetGameState(GameState.PLAYING_GAME);
     }
+
+
 }

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//This class holds the function that's called when the player triggers the win condition
 public class playerVictory : MonoBehaviour
 {
     [Header("Scripts: ")]
     [SerializeField] private Level _level;
     [SerializeField] private GameTimer _gameTimer;
+
     public void PlayerWon()
     {
         Debug.Log("The player just won the game!");

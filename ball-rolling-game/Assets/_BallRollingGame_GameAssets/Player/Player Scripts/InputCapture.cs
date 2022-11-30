@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+//This static script captures the input given by the player and allows any other script to access it.
+//This is the only script that should be using the "Input" class.
 public class InputCapture : MonoBehaviour
 {
     public static InputCapture instance;
@@ -16,6 +18,7 @@ public class InputCapture : MonoBehaviour
     {
         instance = this;
     }
+
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
@@ -51,6 +54,7 @@ public class InputCapture : MonoBehaviour
             default: return false;
         }
     }
+
     public float ReturnHorizontalInput()
     {
         return horizontalInput;

@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script sets the correct UI inforamtion for the starting screen display.
+//It should be present in every single level scene.
+//It used the information passed in the level scriptable object to display the correct information.
 public class StartingScreenDisplay : MonoBehaviour
 {
     [Header("Text: ")]

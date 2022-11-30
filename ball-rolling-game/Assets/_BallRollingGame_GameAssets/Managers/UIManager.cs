@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+//This script managed all of the UI in the level scenes.
+//It triggers animations from different animators.
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
@@ -185,12 +187,10 @@ public class UIManager : MonoBehaviour
         mainCanvas.SetActive(true);
         gameStartingCountdownUI.SetActive(true);
         gameStartingCountdownAnimator.SetTrigger("GameStarting");
-        Debug.Log("You should see 3-2-1 GO!");
         //Wait for the 3-2-1 GO! animation to finish
         yield return new WaitForSeconds(3.5f);
         //Make sure to reset the 3-2-1 GO! animtion to it's default, blank state
         gameStartingCountdownAnimator.SetTrigger("ResetToDefaultState");
-        Debug.Log("The starting countdown should be reset to it's default state!");
         //Since the animation is done, the game is now playing:
         GameStarted();
     }
@@ -198,6 +198,5 @@ public class UIManager : MonoBehaviour
     public void ResetStartingMenuToDefaultState()
     {
         startingScreenAnimator.SetTrigger("ResetToDefaultState");
-        Debug.Log("The starting menu should be reset to it's default state");
     }
 }
