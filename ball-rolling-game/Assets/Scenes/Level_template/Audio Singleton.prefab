@@ -41,7 +41,8 @@ AudioSource:
   m_GameObject: {fileID: 4788101607646475623}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ea89764504f1d4b38ac1c8b43ffebfc7,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -50,7 +51,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 160
   DopplerLevel: 1
   MinDistance: 0
   MaxDistance: 1000000
@@ -176,14 +177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sfxAudioSource: {fileID: 4788101608077410650}
   _musicAudioSource: {fileID: 4788101607646475621}
-  _backgroundMusicAudioClips:
-  - {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
-  - {fileID: 8300000, guid: a114b0d4dbc53bf4e9fb9eb5e81edba1, type: 3}
-  - {fileID: 8300000, guid: 457771d0864a67842a71c2fb0a3fdc1a, type: 3}
-  - {fileID: 8300000, guid: 42473177e27deec47a049056af08c108, type: 3}
-  - {fileID: 8300000, guid: 3743191223aa7884aa5f127d9f41d978, type: 3}
-  - {fileID: 8300000, guid: b7501a20c06ef20469c1419fea37f021, type: 3}
-  - {fileID: 8300000, guid: a78303900de031545bfe54fdf32f9c69, type: 3}
   _explosionAudioClips:
   - {fileID: 8300000, guid: ffa45816b43df074790e9986c5b85b3c, type: 3}
   - {fileID: 8300000, guid: 1c70a865ec8b17d4fa26c76eb6f17c4c, type: 3}
@@ -194,12 +187,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ba5b9da8b3b9af742abfa0fd399e1a0f, type: 3}
   - {fileID: 8300000, guid: 0c4f452a658af404d9e375bd5ee7bd63, type: 3}
   _victoryAudioClips:
-  - {fileID: 8300000, guid: e8339afb63339ac4ea10a2885d245849, type: 3}
+  - {fileID: 8300000, guid: fe79a296241334099b9622427a36a916, type: 3}
   _buttonAudioClips:
   - {fileID: 8300000, guid: 58bb2ed36d4ae4791b190261b10827c6, type: 3}
   - {fileID: 8300000, guid: 341cee4e07fa9449885fc189ccdba475, type: 3}
   - {fileID: 8300000, guid: ad47ef8d0f4cc4ac4b3ef60e28a527b2, type: 3}
-  _achievementAudioClips: []
   _collisionAudioClips:
   - {fileID: 8300000, guid: 58bb2ed36d4ae4791b190261b10827c6, type: 3}
   - {fileID: 8300000, guid: 341cee4e07fa9449885fc189ccdba475, type: 3}
@@ -209,8 +201,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2feb4a903195d4f7bb4bf90918c0ae34, type: 3}
   - {fileID: 8300000, guid: 19e11c8cc39c64095b9945f6492fd1d9, type: 3}
   _sadMusic: {fileID: 8300000, guid: 3743191223aa7884aa5f127d9f41d978, type: 3}
+  _victoryBackgroundMusic: {fileID: 0}
+  _levelBackgroundMusic: {fileID: 0}
   _sfxVolume: 1
-  _musicVolume: 1
 --- !u!1 &4788101608077410660
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +245,8 @@ AudioSource:
   m_GameObject: {fileID: 4788101608077410660}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ea89764504f1d4b38ac1c8b43ffebfc7,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -261,7 +255,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 99
   DopplerLevel: 1.09
   MinDistance: 1
   MaxDistance: 90000

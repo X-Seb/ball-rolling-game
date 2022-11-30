@@ -387,5 +387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f2f88fde8444b479c524f858cd8e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {x: 0, y: 0, z: 0}
+  playerRB: {fileID: 263896144483022422}
+  direction: {x: 0, y: 0, z: 0}
   playerSpeed: 0.2
