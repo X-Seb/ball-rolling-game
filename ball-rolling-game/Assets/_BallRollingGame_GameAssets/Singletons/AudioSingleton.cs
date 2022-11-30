@@ -26,7 +26,7 @@ public class AudioSingleton : MonoBehaviour
 
     [Header("Scene-Specific audio clips: (Should be different for every scene)")]
     [SerializeField] private AudioClip _levelBackgroundMusic;
-
+    
     [Header("Volume for reference only: ")]
     [SerializeField] private float _sfxVolume = 1.0f;
 
