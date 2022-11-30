@@ -20,10 +20,12 @@ public class AudioSingleton : MonoBehaviour
     [SerializeField] private AudioClip[] _buttonAudioClips;
     [SerializeField] private AudioClip[] _collisionAudioClips;
 
-    [Header("Specific audio clips: ")]
+    [Header("Other audio clips: (these should always be the same)")]
     [SerializeField] private AudioClip _sadMusic;
-    [SerializeField] private AudioClip _levelBackgroundMusic;
     [SerializeField] private AudioClip _victoryBackgroundMusic;
+
+    [Header("Scene-Specific audio clips: (Should be different for every scene)")]
+    [SerializeField] private AudioClip _levelBackgroundMusic;
 
     [Header("Volume for reference only: ")]
     [SerializeField] private float _sfxVolume = 1.0f;
