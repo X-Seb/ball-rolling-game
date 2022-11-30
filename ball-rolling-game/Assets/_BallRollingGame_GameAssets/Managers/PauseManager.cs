@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Changes the time scale of the game scenes and updates the game state
 public class PauseManager : MonoBehaviour
 {
     private void Start()

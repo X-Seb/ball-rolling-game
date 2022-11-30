@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script goes on each box that contains the level information in the main menu
 public class LevelInfoDisplay : MonoBehaviour
 {
     [Header("Text: ")]

@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This manages collisions between the player and different objects.
 public class PlayerCollisionManager : MonoBehaviour
 {
-    // This manages collisions between the player and different objects.
     [Header("Scripts: ")]
     [SerializeField] private PlayerGameOver playerGameOver;
     [SerializeField] private  playerVictory playerVictory;

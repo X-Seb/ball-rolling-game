@@ -11,6 +11,7 @@ public class SettingsManager : MonoBehaviour
 
     private void Start()
     {
+        //Remembers the chosen audio volume when you enter start the scene
         if (PlayerPrefs.HasKey("Volume"))
         {
             mainMixer.SetFloat("Volume", PlayerPrefs.GetFloat("Volume"));
@@ -20,8 +21,8 @@ public class SettingsManager : MonoBehaviour
 
     public void SetVolume(float volume)
     {
+        //Changes the volume of the main mixer and saves it to PlayerPrefs
         mainMixer.SetFloat("Volume", volume);
-
         PlayerPrefs.SetFloat("Volume", volume);
     }
 }
