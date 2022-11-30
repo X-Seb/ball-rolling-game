@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/// <summary>
+///This script creates a scriptable object for all of the game's levels.
+///From the "assets" section, you can create a new level and modify it's properties.
+///You can then use that level as a value for variables in other scripts.
+/// </summary>
 [CreateAssetMenu(fileName = "New Level", menuName = "Level")]
 public class Level : ScriptableObject
 {
@@ -19,9 +24,7 @@ public class Level : ScriptableObject
     [Header("These values are changed when the game object is enabled to match the PlayerPrefs data")]
     public bool levelCompleted;
     public bool levelUnlocked;
-    public bool star1;
-    public bool star2;
-    public bool star3;
+
     [Header("If fastestTime = -1, then the player never finished the level. ")]
     public float fastestTime;
 
@@ -29,9 +32,6 @@ public class Level : ScriptableObject
     {
         levelCompleted = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Completed");
         levelUnlocked = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Unlocked");
-        star1 = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Star1");
-        star1 = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Star1");
-        star1 = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Star1");
 
         if (PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_FastestTime"))
         {
