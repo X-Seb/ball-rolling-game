@@ -4955,7 +4955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelNameText: {fileID: 1339866143000425941}
   _timeText: {fileID: 3963179293595564717}
-  _fastestTimeText: {fileID: 0}
+  _fastestTimeText: {fileID: 4729687271453015666}
   _bar1: {fileID: 4887298352974504310}
   _bar2: {fileID: 4887298353592718736}
   _bar3: {fileID: 4887298352161301555}
@@ -12458,7 +12458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelNameText: {fileID: 5700882532996264160}
   _timeText: {fileID: 7675745426394726296}
-  _fastestTimeText: {fileID: 0}
+  _fastestTimeText: {fileID: 2028461369350748999}
   _bar1: {fileID: 2186102519426573379}
   _bar2: {fileID: 2186102518945845413}
   _bar3: {fileID: 2186102520727298310}
@@ -12602,7 +12602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelNameText: {fileID: 5700882534231917741}
   _timeText: {fileID: 7675745427843566549}
-  _fastestTimeText: {fileID: 0}
+  _fastestTimeText: {fileID: 2028461368711515914}
   _bar1: {fileID: 2186102520406216718}
   _bar2: {fileID: 2186102519917012200}
   _bar3: {fileID: 2186102519223981387}
@@ -12834,7 +12834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelNameText: {fileID: 5700882534763547888}
   _timeText: {fileID: 7675745427309839240}
-  _fastestTimeText: {fileID: 0}
+  _fastestTimeText: {fileID: 2028461369262016343}
   _bar1: {fileID: 2186102519857813587}
   _bar2: {fileID: 2186102520482196661}
   _bar3: {fileID: 2186102518692355350}

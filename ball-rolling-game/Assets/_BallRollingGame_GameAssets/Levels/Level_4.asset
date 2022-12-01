@@ -14,12 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: The Ultimate Test
   levelDescription: Are you ready for this?
-  levelDifficulty: 3
-  timeToCompleteLevel: 100
+  levelDifficulty: 2
+  timeToCompleteLevel: 70
   levelBuildIndex: 4
   levelCompleted: 0
   levelUnlocked: 0
-  star1: 0
-  star2: 0
-  star3: 0
   fastestTime: -1
