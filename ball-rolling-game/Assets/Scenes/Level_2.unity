@@ -4162,7 +4162,7 @@ MonoBehaviour:
   _colorBar5: {r: 0.49056602, g: 0.121914595, b: 0.011569952, a: 1}
   _barDeactivated: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   _timeBackground: {fileID: 1680135547}
-  _level: {fileID: 0}
+  _level: {fileID: 11400000, guid: 95ba76d4940b8364d99987b70a281a10, type: 2}
 --- !u!1 &1077480691
 GameObject:
   m_ObjectHideFlags: 0
@@ -5761,7 +5761,7 @@ MonoBehaviour:
   - You actually finished the level? Good job.
   - Now do it again, but faster.
   - You earned some respect points.
-  _level: {fileID: 0}
+  _level: {fileID: 11400000, guid: 95ba76d4940b8364d99987b70a281a10, type: 2}
 --- !u!4 &1664476452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7761002867548297467, guid: 8cbf6fb0e83944c4fa353b36dc1f0644,
@@ -6312,7 +6312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeText: {fileID: 1285018031}
   _background: {fileID: 1882643118}
-  _level: {fileID: 0}
+  _level: {fileID: 11400000, guid: 95ba76d4940b8364d99987b70a281a10, type: 2}
   playerGameOver: {fileID: 686542181}
   _totalElapsedTime: 0
   _timeLeft: 0
@@ -6494,6 +6494,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 263896144981853612, guid: 4e0a14d98741f4b8990000ee36439102,
+        type: 3}
+      propertyPath: _level
+      value: 
+      objectReference: {fileID: 11400000, guid: 95ba76d4940b8364d99987b70a281a10,
+        type: 2}
     - target: {fileID: 263896144981853612, guid: 4e0a14d98741f4b8990000ee36439102,
         type: 3}
       propertyPath: _gameTimer
