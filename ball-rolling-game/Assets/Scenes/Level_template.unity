@@ -1534,7 +1534,7 @@ PrefabInstance:
     - target: {fileID: 1339866141980685891, guid: 701d287d8650f4ecb9213c5cffaf879e,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 100663295
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 701d287d8650f4ecb9213c5cffaf879e, type: 3}
@@ -1985,7 +1985,7 @@ PrefabInstance:
     - target: {fileID: 8618142415424415336, guid: cbba9e7586e5d47a6ac0fdd849f16f4a,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 100663295
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbba9e7586e5d47a6ac0fdd849f16f4a, type: 3}
@@ -3281,7 +3281,7 @@ RectTransform:
   - {fileID: 1528629566}
   - {fileID: 352419606}
   m_Father: {fileID: 1155908991}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4402,8 +4402,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 381210781}
-  - {fileID: 802638350}
   - {fileID: 1635703905}
+  - {fileID: 802638350}
   - {fileID: 1544595966}
   - {fileID: 179364389}
   m_Father: {fileID: 214024563}
@@ -5543,7 +5543,7 @@ RectTransform:
   - {fileID: 2563844842194142379}
   - {fileID: 164452891}
   m_Father: {fileID: 1155908991}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7929,7 +7929,7 @@ PrefabInstance:
     - target: {fileID: 7761002867548297467, guid: 912868b3da08e4f16bdbde93b872212f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.50017
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7761002867548297467, guid: 912868b3da08e4f16bdbde93b872212f,
         type: 3}
