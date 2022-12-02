@@ -36,15 +36,15 @@ public class GameTimer : MonoBehaviour
 
         _timeText.text = Mathf.Floor(_timeLeft).ToString();
 
-        if (_timeLeft >= 60)
+        if (_timeLeft >= 30)
         {
             _background.color = Color.green;
         }
-        if (_timeLeft < 60 && _timeLeft > 30)
+        if (_timeLeft < 30 && _timeLeft > 30)
         {
             _background.color = Color.yellow;
         }
-        if (_timeLeft < 30 && _timeLeft > 0)
+        if (_timeLeft < 10 && _timeLeft > 0)
         {
             _background.color = Color.red;  
         }
