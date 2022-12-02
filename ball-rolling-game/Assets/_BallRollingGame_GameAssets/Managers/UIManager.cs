@@ -49,6 +49,11 @@ public class UIManager : MonoBehaviour
         gameOverUI.SetActive(false);
         victoryUI.SetActive(false);
         gameUI.SetActive(false);
+
+        //Set the volume to 0, then gradually increase it to 1
+        AudioSingleton.Instance.SetVolumeGradually(0.0f, 0.0f);
+        AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
+
         //start the StartingMenu animation: 
         StartCoroutine(SceneJustLoaded());
     }
@@ -105,6 +110,7 @@ public class UIManager : MonoBehaviour
 
     public void LoadMainMenuButton()
     {
+        ChangingScene();
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         LevelLoader.instance.LoadSceneAsync(0);
     }
@@ -112,6 +118,7 @@ public class UIManager : MonoBehaviour
     public void LoadNextLevelButton()
     {
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        ChangingScene();
         if (SceneManager.GetActiveScene().buildIndex != _lastLevelBuildIndex)
         {
             LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
@@ -165,6 +172,7 @@ public class UIManager : MonoBehaviour
 
     public void ChangingScene()
     {
+        startingCanvas.SetActive(false);
         mainCanvas.SetActive(false);
     }
 
@@ -184,6 +192,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator GameStarting()
     {
+        AudioSingleton.Instance.SetVolumeGradually(0.0f, 3.0f);
         mainCanvas.SetActive(true);
         gameStartingCountdownUI.SetActive(true);
         gameStartingCountdownAnimator.SetTrigger("GameStarting");
