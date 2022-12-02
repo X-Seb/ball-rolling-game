@@ -484,7 +484,7 @@ MonoBehaviour:
   _xDisplacement: 0
   _yDisplacement: 0
   _zDisplacement: 5
-  _cycleTime: 5
+  _cycleTime: 3
   _typeOfEasing: 2
   _numberOfLoops: -1
   _loopType: 1
@@ -2846,9 +2846,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformList:
   - {fileID: 531083501}
-  _xDisplacement: -5
+  _xDisplacement: 0
   _yDisplacement: 0
-  _zDisplacement: 0
+  _zDisplacement: -5
   _cycleTime: 3
   _typeOfEasing: 1
   _numberOfLoops: -1
@@ -3084,9 +3084,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformList:
   - {fileID: 595468854}
-  _xDisplacement: 5
+  _xDisplacement: 0
   _yDisplacement: 0
-  _zDisplacement: 0
+  _zDisplacement: 5
   _cycleTime: 3
   _typeOfEasing: 1
   _numberOfLoops: -1
@@ -4492,9 +4492,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transformList:
   - {fileID: 897574647}
-  _xDisplacement: 5
+  _xDisplacement: 0
   _yDisplacement: 0
-  _zDisplacement: 0
+  _zDisplacement: 5
   _cycleTime: 3
   _typeOfEasing: 1
   _numberOfLoops: -1
