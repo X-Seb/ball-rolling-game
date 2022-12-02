@@ -16,13 +16,14 @@ public class AudioSingleton : MonoBehaviour
 
     [Header("List of sound clip lists: ")]
     [SerializeField] private AudioClip[] _explosionAudioClips;
-    [SerializeField] private AudioClip[] _victoryAudioClips;
+    [SerializeField] private AudioClip[] _achievementAudioClips;
     [SerializeField] private AudioClip[] _buttonAudioClips;
     [SerializeField] private AudioClip[] _collisionAudioClips;
 
     [Header("Other audio clips: (these should always be the same)")]
-    [SerializeField] private AudioClip _sadMusic;
+    [SerializeField] private AudioClip _sadBackgroundMusic;
     [SerializeField] private AudioClip _victoryBackgroundMusic;
+    [SerializeField] private AudioClip _startingMenuBackgroundMusic;
 
     [Header("Scene-Specific audio clips: (Should be different for every scene)")]
     [SerializeField] private AudioClip _levelBackgroundMusic;
@@ -44,55 +45,70 @@ public class AudioSingleton : MonoBehaviour
         }
     }
 
-    public void PlayExplosionSound()
+    public enum SoundEffect
     {
-        int index = Random.Range(0, _buttonAudioClips.Length);
-        AudioClip clip = _buttonAudioClips[index];
-        _sfxAudioSource.PlayOneShot(clip, _sfxVolume);
+        EXPLOSION,
+        ACHIEVEMENT,
+        BUTTON,
+        COLLISION
     }
 
-    public void PlaySadMusic()
+    public enum Music
     {
-        _musicAudioSource.clip = _sadMusic;
+        SAD,
+        VICTORY,
+        LEVEL_MUSIC
+    }
+
+    public void PlaySoundEffect(SoundEffect type)
+    {
+        switch (type)
+        {
+            case SoundEffect.ACHIEVEMENT:
+                int index = Random.Range(0, _achievementAudioClips.Length);
+                _sfxAudioSource.PlayOneShot(_achievementAudioClips[index]);
+                    break;
+            case SoundEffect.BUTTON:
+                int index1 = Random.Range(0, _buttonAudioClips.Length);
+                _sfxAudioSource.PlayOneShot(_buttonAudioClips[index1]);
+                break;
+            case SoundEffect.COLLISION:
+                int index2 = Random.Range(0, _collisionAudioClips.Length);
+                _sfxAudioSource.PlayOneShot(_collisionAudioClips[index2]);
+                break;
+            case SoundEffect.EXPLOSION:
+                int index3 = Random.Range(0, _explosionAudioClips.Length);
+                _sfxAudioSource.PlayOneShot(_explosionAudioClips[index3]);
+                break;
+            default:
+                break;
+
+        }
+    }
+
+    public void PlayMusic(Music type)
+    {
+        switch (type)
+        {
+            case Music.SAD:
+                _musicAudioSource.clip = _sadBackgroundMusic;
+                break;
+            case Music.VICTORY:
+                _musicAudioSource.clip = _victoryBackgroundMusic;
+                break;
+            case Music.LEVEL_MUSIC:
+                _musicAudioSource.clip = _levelBackgroundMusic;
+                break;
+            default:
+                break;
+        }
+
         _musicAudioSource.Play();
     }
 
-    public void PlayVictoryMusic()
+    public void SetVolumeGradually(float volume, float seconds)
     {
-        _musicAudioSource.clip = _victoryBackgroundMusic;
-        _musicAudioSource.Play();
-    }
-
-    public void PlayVictorySound()
-    {
-        int index = Random.Range(0, _victoryAudioClips.Length);
-        AudioClip clip = _victoryAudioClips[index];
-        _sfxAudioSource.PlayOneShot(clip, _sfxVolume);
-    }
-
-    public void PlayBackgroundMusic()
-    {
-        _musicAudioSource.clip = _levelBackgroundMusic;
-        _musicAudioSource.Play();
-    }
-
-    public void PlayButtonSound()
-    {
-        int index = Random.Range(0, _buttonAudioClips.Length);
-        AudioClip clip = _buttonAudioClips[index];
-        _sfxAudioSource.PlayOneShot(clip, _sfxVolume);
-    }
-
-    public void PlayCollisionSound()
-    {
-        int index = Random.Range(0, _collisionAudioClips.Length);
-        AudioClip clip = _collisionAudioClips[index];
-        _sfxAudioSource.PlayOneShot(clip, _sfxVolume);
-    }
-
-    public void PlayOneShot(AudioClip audioClip)
-    {
-        _sfxAudioSource.PlayOneShot(audioClip, _sfxVolume);
+        _musicAudioSource.volume = Mathf.Lerp(_musicAudioSource.volume, volume, seconds);
     }
 
     public void StopMusic()

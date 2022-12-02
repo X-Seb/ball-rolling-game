@@ -33,8 +33,8 @@ public class playerVictory : MonoBehaviour
         //Transition to the victory UI and corresponding GameState
         GameManager.instance.SetGameState(GameManager.GameState.FINISHED_LEVEL_TRANSITION);
         UIManager.instance.PlayerWon();
-        AudioSingleton.Instance.PlayVictorySound();
-        AudioSingleton.Instance.PlayVictoryMusic();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.ACHIEVEMENT);
+        AudioSingleton.Instance.SetVolumeGradually(0.0f, 2.0f);
         StartCoroutine(WaitForAnimation());
     }
 
@@ -42,5 +42,6 @@ public class playerVictory : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         GameManager.instance.SetGameState(GameManager.GameState.PLAYER_FINISHED_LEVEL);
+        AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.VICTORY);
     }
 }

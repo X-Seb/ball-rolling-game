@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour
     public void StartGameFromStartingMenuButton()
     {
         //This is called by the green "Start" button in the StartingMenu
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         mainCanvas.SetActive(true);
         startingCanvas.SetActive(false);
         StartCoroutine(GameStarting());
@@ -66,7 +66,7 @@ public class UIManager : MonoBehaviour
     public void GameStarted()
     {
         //Only activate the gameUI, so the player can start playing.
-        AudioSingleton.Instance.PlayBackgroundMusic();
+        AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.LEVEL_MUSIC);
         mainCanvas.SetActive(true);
         startingCanvas.SetActive(false);
         gameUI.SetActive(true);
@@ -83,7 +83,7 @@ public class UIManager : MonoBehaviour
     {
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
-            AudioSingleton.Instance.PlayButtonSound();
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
             pauseManager.PauseGame();
         }
     }
@@ -92,26 +92,26 @@ public class UIManager : MonoBehaviour
     {
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.GAME_PAUSED)
         {
-            AudioSingleton.Instance.PlayButtonSound();
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
             pauseManager.ResumeGame();
         }
     }
 
     public void RestartLevelButton()
     {
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadMainMenuButton()
     {
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         LevelLoader.instance.LoadSceneAsync(0);
     }
 
     public void LoadNextLevelButton()
     {
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         if (SceneManager.GetActiveScene().buildIndex != _lastLevelBuildIndex)
         {
             LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
