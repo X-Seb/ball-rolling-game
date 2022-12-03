@@ -12216,7 +12216,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _sadBackgroundMusic
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 7ac6d42d78f2c4f84b3b691a501e6470, type: 3}
     - target: {fileID: 104265560389141491, guid: 5322ec8ebcb2dd14499152632c2ef717,
         type: 3}
       propertyPath: _levelBackgroundMusic
