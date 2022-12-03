@@ -108,7 +108,24 @@ public class AudioSingleton : MonoBehaviour
 
     public void SetVolumeGradually(float volume, float seconds)
     {
-        _musicAudioSource.volume = Mathf.Lerp(_musicAudioSource.volume, volume, seconds);
+        StartCoroutine(SetVolume(volume, seconds));
+    }
+
+    private IEnumerator SetVolume(float endValue, float lerpDuration)
+    {
+        float timeElapsed = 0.0f;
+        float startValue = _musicAudioSource.volume;
+
+
+        while (timeElapsed < lerpDuration)
+        {
+            _musicAudioSource.volume = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        _musicAudioSource.volume = endValue;
+
     }
 
     public void StopMusic()

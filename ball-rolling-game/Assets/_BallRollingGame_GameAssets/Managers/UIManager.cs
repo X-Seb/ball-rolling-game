@@ -70,8 +70,10 @@ public class UIManager : MonoBehaviour
 
     public void GameStarted()
     {
-        //Only activate the gameUI, so the player can start playing.
+        //Gradually increase the volume while playing the level's original music
         AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.LEVEL_MUSIC);
+        AudioSingleton.Instance.SetVolumeGradually(1.0f, 2.0f);
+        //Only activate the gameUI, so the player can start playing.
         mainCanvas.SetActive(true);
         startingCanvas.SetActive(false);
         gameUI.SetActive(true);
