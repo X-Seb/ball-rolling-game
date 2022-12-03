@@ -60,7 +60,7 @@ public class LevelLoader : MonoBehaviour
 
     public async void LoadSceneAsync(int sceneBuildIndex)
     {
-        AudioSingleton.Instance.StopMusic();
+        AudioSingleton.Instance.SetVolumeGradually(0.0f, 1.5f);
         //Unpauses the game so the UI displays correctly.
         Time.timeScale = 1.0f;
         Debug.Log("Starting to load the next scene");
@@ -96,7 +96,7 @@ public class LevelLoader : MonoBehaviour
 
         //Wait one and a half seconds
         await Task.Delay(1500);
-
+        AudioSingleton.Instance.StopMusic();
 
         Debug.Log("Scene loaded!");
         //Allow the next scene to activate, which changes the scene

@@ -50,8 +50,8 @@ public class UIManager : MonoBehaviour
         victoryUI.SetActive(false);
         gameUI.SetActive(false);
 
-        //Set the volume to 0, then gradually increase it to 1
-        AudioSingleton.Instance.SetVolumeGradually(0.0f, 0.0f);
+        //Stop the musicc, then gradually increase it to 1
+        AudioSingleton.Instance.StopMusic();
         AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
 
         //start the StartingMenu animation: 
