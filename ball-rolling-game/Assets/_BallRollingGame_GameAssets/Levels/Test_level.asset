@@ -15,8 +15,8 @@ MonoBehaviour:
   levelName: Level template
   levelDescription: Let's hope this work!
   levelDifficulty: 3
-  timeToCompleteLevel: 69
+  timeToCompleteLevel: 20
   levelBuildIndex: 5
-  levelCompleted: 0
+  levelCompleted: 1
   levelUnlocked: 0
-  fastestTime: -1
+  fastestTime: 6.263774

@@ -40,7 +40,7 @@ public class GameTimer : MonoBehaviour
         {
             _background.color = Color.green;
         }
-        if (_timeLeft < 30 && _timeLeft > 30)
+        if (_timeLeft < 30 && _timeLeft > 10)
         {
             _background.color = Color.yellow;
         }
