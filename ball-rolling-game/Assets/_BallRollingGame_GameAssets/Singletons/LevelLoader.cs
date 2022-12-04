@@ -91,7 +91,7 @@ public class LevelLoader : MonoBehaviour
         do
         {
             //Update the visual indicators to show the loading progress
-            targetSliderValue = scene.progress * 110;
+            targetSliderValue = scene.progress * 111;
         } while (scene.progress < 0.9f);
 
         //Wait one and a half seconds
