@@ -49,6 +49,11 @@ public class UIManager : MonoBehaviour
         gameOverUI.SetActive(false);
         victoryUI.SetActive(false);
         gameUI.SetActive(false);
+
+        //Stop the musicc, then gradually increase it to 1
+        AudioSingleton.Instance.StopMusic();
+        AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
+
         //start the StartingMenu animation: 
         StartCoroutine(SceneJustLoaded());
     }
@@ -56,7 +61,7 @@ public class UIManager : MonoBehaviour
     public void StartGameFromStartingMenuButton()
     {
         //This is called by the green "Start" button in the StartingMenu
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         mainCanvas.SetActive(true);
         startingCanvas.SetActive(false);
         StartCoroutine(GameStarting());
@@ -65,8 +70,10 @@ public class UIManager : MonoBehaviour
 
     public void GameStarted()
     {
+        //Gradually increase the volume while playing the level's original music
+        AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.LEVEL_MUSIC);
+        AudioSingleton.Instance.SetVolumeGradually(1.0f, 2.0f);
         //Only activate the gameUI, so the player can start playing.
-        AudioSingleton.Instance.PlayBackgroundMusic();
         mainCanvas.SetActive(true);
         startingCanvas.SetActive(false);
         gameUI.SetActive(true);
@@ -83,7 +90,7 @@ public class UIManager : MonoBehaviour
     {
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
-            AudioSingleton.Instance.PlayButtonSound();
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
             pauseManager.PauseGame();
         }
     }
@@ -92,26 +99,28 @@ public class UIManager : MonoBehaviour
     {
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.GAME_PAUSED)
         {
-            AudioSingleton.Instance.PlayButtonSound();
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
             pauseManager.ResumeGame();
         }
     }
 
     public void RestartLevelButton()
     {
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadMainMenuButton()
     {
-        AudioSingleton.Instance.PlayButtonSound();
+        ChangingScene();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
         LevelLoader.instance.LoadSceneAsync(0);
     }
 
     public void LoadNextLevelButton()
     {
-        AudioSingleton.Instance.PlayButtonSound();
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        ChangingScene();
         if (SceneManager.GetActiveScene().buildIndex != _lastLevelBuildIndex)
         {
             LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
@@ -165,6 +174,7 @@ public class UIManager : MonoBehaviour
 
     public void ChangingScene()
     {
+        startingCanvas.SetActive(false);
         mainCanvas.SetActive(false);
     }
 
@@ -184,6 +194,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator GameStarting()
     {
+        AudioSingleton.Instance.SetVolumeGradually(0.0f, 3.0f);
         mainCanvas.SetActive(true);
         gameStartingCountdownUI.SetActive(true);
         gameStartingCountdownAnimator.SetTrigger("GameStarting");

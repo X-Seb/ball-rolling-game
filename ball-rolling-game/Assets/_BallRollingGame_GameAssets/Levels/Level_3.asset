@@ -15,11 +15,8 @@ MonoBehaviour:
   levelName: The Trial
   levelDescription: It's time to put your skills to good use...
   levelDifficulty: 2
-  timeToCompleteLevel: 100
+  timeToCompleteLevel: 80
   levelBuildIndex: 3
   levelCompleted: 0
   levelUnlocked: 0
-  star1: 0
-  star2: 0
-  star3: 0
   fastestTime: -1

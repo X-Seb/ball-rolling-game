@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d73c1fdf1b8f3346b0aca9f95251ea9, type: 3}
   m_Name: Level_1
   m_EditorClassIdentifier: 
-  levelName: Getting Started
-  levelDescription: This is the first trial... It's time to determine if you are
-    worthy...
+  levelName: The first trial
+  levelDescription: It's time to determine if you are worthy...
   levelDifficulty: 1
   timeToCompleteLevel: 60
   levelBuildIndex: 1
-  levelCompleted: 1
+  levelCompleted: 0
   levelUnlocked: 1
-  fastestTime: 12.899521
+  fastestTime: -1

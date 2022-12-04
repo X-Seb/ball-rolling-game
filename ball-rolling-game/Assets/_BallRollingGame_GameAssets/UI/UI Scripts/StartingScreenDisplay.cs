@@ -38,7 +38,6 @@ public class StartingScreenDisplay : MonoBehaviour
     {
         SetText();
         SetDifficultyColors();
-        //Set fastest time
         SetTimeColor();
     }
 
