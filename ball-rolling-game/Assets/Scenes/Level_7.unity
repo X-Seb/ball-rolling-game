@@ -3745,8 +3745,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875052678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 73.5}
+  m_LocalScale: {x: 3, y: 1, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1196889872}
@@ -11381,7 +11381,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerGameOver
       value: 
-      objectReference: {fileID: 686542181}
+      objectReference: {fileID: 0}
     - target: {fileID: 263896144483022423, guid: 93a85aa4dad6047288cf4662c64c8eb9,
         type: 3}
       propertyPath: m_RootOrder
@@ -11446,13 +11446,12 @@ PrefabInstance:
         type: 3}
       propertyPath: _level
       value: 
-      objectReference: {fileID: 11400000, guid: 910c9f41fecbb49afaa12b786efcedc3,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 263896144981853612, guid: 93a85aa4dad6047288cf4662c64c8eb9,
         type: 3}
       propertyPath: _gameTimer
       value: 
-      objectReference: {fileID: 2047985240}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a85aa4dad6047288cf4662c64c8eb9, type: 3}
 --- !u!1001 &921375148887762896
@@ -12221,22 +12220,22 @@ PrefabInstance:
         type: 3}
       propertyPath: _sadBackgroundMusic
       value: 
-      objectReference: {fileID: 8300000, guid: 7ac6d42d78f2c4f84b3b691a501e6470, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _levelBackgroundMusic
       value: 
-      objectReference: {fileID: 8300000, guid: b2bc6bc3d7eed4299a27ed683c5fd3c1, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _buttonAudioClips.Array.size
-      value: 11
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _startingMenuBackgroundMusic
       value: 
-      objectReference: {fileID: 8300000, guid: 6138a482147874bea98de29064dbdee1, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _buttonAudioClips.Array.data[3]
@@ -12275,12 +12274,12 @@ PrefabInstance:
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _collisionAudioClips.Array.size
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _explosionAudioClips.Array.size
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
@@ -12290,7 +12289,7 @@ PrefabInstance:
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
       propertyPath: _achievementAudioClips.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 104265560389141491, guid: 4e4bde45116f5474aa02ac50c8766b52,
         type: 3}
@@ -13085,7 +13084,7 @@ PrefabInstance:
     - target: {fileID: 7761002867548297467, guid: 6e5a94793bcdd42728212cbe8ad0ac0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 7761002867548297467, guid: 6e5a94793bcdd42728212cbe8ad0ac0c,
         type: 3}
@@ -13095,7 +13094,7 @@ PrefabInstance:
     - target: {fileID: 7761002867548297467, guid: 6e5a94793bcdd42728212cbe8ad0ac0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.50007
+      value: 150.50302
       objectReference: {fileID: 0}
     - target: {fileID: 7761002867548297467, guid: 6e5a94793bcdd42728212cbe8ad0ac0c,
         type: 3}
