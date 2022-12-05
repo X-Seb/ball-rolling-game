@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject startingCanvas;
     public GameObject mainCanvas;
     [Header("UI Menus: ")]
+    [SerializeField] private GameObject startingScreenUI;
     [SerializeField] private GameObject gameStartingCountdownUI;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject victoryUI;
@@ -44,6 +45,7 @@ public class UIManager : MonoBehaviour
     {
         //Make sure only the startingMenu from the StartingCanvas is active
         startingCanvas.SetActive(true);
+        startingScreenUI.SetActive(true);
         mainCanvas.SetActive(false);
         pauseUI.SetActive(false);
         gameOverUI.SetActive(false);

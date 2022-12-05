@@ -10681,6 +10681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingCanvas: {fileID: 581368759}
   mainCanvas: {fileID: 1155908990}
+  startingScreenUI: {fileID: 629726751}
   gameStartingCountdownUI: {fileID: 381210780}
   gameOverUI: {fileID: 802638349}
   victoryUI: {fileID: 1635703904}
