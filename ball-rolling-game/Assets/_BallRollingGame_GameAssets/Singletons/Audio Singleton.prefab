@@ -186,12 +186,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e3298e35eed19c942b6f4d2d41cd21ba, type: 3}
   - {fileID: 8300000, guid: ba5b9da8b3b9af742abfa0fd399e1a0f, type: 3}
   - {fileID: 8300000, guid: 0c4f452a658af404d9e375bd5ee7bd63, type: 3}
-  _victoryAudioClips:
-  - {fileID: 8300000, guid: fe79a296241334099b9622427a36a916, type: 3}
+  - {fileID: 8300000, guid: e70eb034c8ae4fe42b00d809716998e4, type: 3}
+  - {fileID: 8300000, guid: 5950a8a948fac4595b8b1750744fb22f, type: 3}
+  - {fileID: 8300000, guid: 2feb4a903195d4f7bb4bf90918c0ae34, type: 3}
+  _achievementAudioClips:
+  - {fileID: 8300000, guid: 3aa3ab3c3d5f24f4da6be38fa605a5e2, type: 3}
+  - {fileID: 8300000, guid: fd7aa363a188d47858202c3344e3fd2c, type: 3}
+  - {fileID: 8300000, guid: 616cf7f5cffb52e4caa0df9070ee4067, type: 3}
   _buttonAudioClips:
   - {fileID: 8300000, guid: 58bb2ed36d4ae4791b190261b10827c6, type: 3}
   - {fileID: 8300000, guid: 341cee4e07fa9449885fc189ccdba475, type: 3}
   - {fileID: 8300000, guid: ad47ef8d0f4cc4ac4b3ef60e28a527b2, type: 3}
+  - {fileID: 8300000, guid: fd7aa363a188d47858202c3344e3fd2c, type: 3}
+  - {fileID: 8300000, guid: 2fafc0a0572094916b47ba98081760ea, type: 3}
+  - {fileID: 8300000, guid: 2db033a45ffa44b1e8e05ec8169e1838, type: 3}
+  - {fileID: 8300000, guid: 806b3206fbe14478a85da553f4920da2, type: 3}
+  - {fileID: 8300000, guid: 104d3de4bc4804e89a6bdeb489998ae6, type: 3}
+  - {fileID: 8300000, guid: 8ecf78a942a6442889efd53fe4b371d5, type: 3}
+  - {fileID: 8300000, guid: 0b03e8b58b9f64381bfc412fd721453e, type: 3}
+  - {fileID: 8300000, guid: 20cb9da9b1e674c2dadbeff749c8fc14, type: 3}
   _collisionAudioClips:
   - {fileID: 8300000, guid: 58bb2ed36d4ae4791b190261b10827c6, type: 3}
   - {fileID: 8300000, guid: 341cee4e07fa9449885fc189ccdba475, type: 3}
@@ -200,10 +213,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2e6ebbf10077e4eb6aebd2161f67ffb2, type: 3}
   - {fileID: 8300000, guid: 2feb4a903195d4f7bb4bf90918c0ae34, type: 3}
   - {fileID: 8300000, guid: 19e11c8cc39c64095b9945f6492fd1d9, type: 3}
-  _sadMusic: {fileID: 8300000, guid: 3743191223aa7884aa5f127d9f41d978, type: 3}
-  _victoryBackgroundMusic: {fileID: 0}
+  - {fileID: 8300000, guid: 560b59f7bba57425da9d11fb4794b676, type: 3}
+  - {fileID: 8300000, guid: 28078bb98948447a5a0756690bca1e1a, type: 3}
+  - {fileID: 8300000, guid: 6937cd5b5e4dc499f994890ed832259b, type: 3}
+  _sadBackgroundMusic: {fileID: 8300000, guid: 7ac6d42d78f2c4f84b3b691a501e6470, type: 3}
+  _victoryBackgroundMusic: {fileID: 8300000, guid: 6138a482147874bea98de29064dbdee1,
+    type: 3}
+  _startingMenuBackgroundMusic: {fileID: 8300000, guid: b2bc6bc3d7eed4299a27ed683c5fd3c1,
+    type: 3}
   _levelBackgroundMusic: {fileID: 0}
-  _sfxVolume: 1
 --- !u!1 &104265562291988279
 GameObject:
   m_ObjectHideFlags: 0
