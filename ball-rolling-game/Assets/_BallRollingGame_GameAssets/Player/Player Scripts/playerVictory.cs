@@ -33,7 +33,7 @@ public class playerVictory : MonoBehaviour
         //Transition to the victory UI and corresponding GameState
         GameManager.instance.SetGameState(GameManager.GameState.FINISHED_LEVEL_TRANSITION);
         UIManager.instance.PlayerWon();
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.ACHIEVEMENT);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.ACHIEVEMENT, 1.0f);
         AudioSingleton.Instance.SetVolumeGradually(0.0f, 2.0f);
         StartCoroutine(WaitForAnimation());
     }

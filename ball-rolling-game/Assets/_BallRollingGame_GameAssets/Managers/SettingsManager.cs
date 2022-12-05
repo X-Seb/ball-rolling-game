@@ -27,4 +27,9 @@ public class SettingsManager : MonoBehaviour
         mainMixer.SetFloat("Volume", volume);
         PlayerPrefs.SetFloat("Volume", volume);
     }
+
+    public void SetQuality(int qualityIndex)
+    {
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
 }

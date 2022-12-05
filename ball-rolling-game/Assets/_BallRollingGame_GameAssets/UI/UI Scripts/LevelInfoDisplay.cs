@@ -44,7 +44,7 @@ public class LevelInfoDisplay : MonoBehaviour
 
     public void PlayLevel()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.SetInt("FirstPlay", 1);
         LevelLoader.instance.LoadSceneAsync(_level.levelBuildIndex);
     }

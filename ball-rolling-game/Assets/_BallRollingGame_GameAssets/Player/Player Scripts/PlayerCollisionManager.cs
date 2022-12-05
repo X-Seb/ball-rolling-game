@@ -31,7 +31,7 @@ public class PlayerCollisionManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Movable Object") && 
             GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
-            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.COLLISION);
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.COLLISION, 0.5f);
         }
     }
 
