@@ -27,9 +27,6 @@ public class AudioSingleton : MonoBehaviour
 
     [Header("Scene-Specific audio clips: (Should be different for every scene)")]
     [SerializeField] private AudioClip _levelBackgroundMusic;
-    
-    [Header("Volume for reference only: ")]
-    [SerializeField] private float _sfxVolume = 1.0f;
 
     //This makes this class a singleton
     private void Awake()
@@ -60,25 +57,25 @@ public class AudioSingleton : MonoBehaviour
         LEVEL_MUSIC
     }
 
-    public void PlaySoundEffect(SoundEffect type)
+    public void PlaySoundEffect(SoundEffect type, float volume)
     {
         switch (type)
         {
             case SoundEffect.ACHIEVEMENT:
                 int index = Random.Range(0, _achievementAudioClips.Length);
-                _sfxAudioSource.PlayOneShot(_achievementAudioClips[index]);
+                _sfxAudioSource.PlayOneShot(_achievementAudioClips[index], volume);
                     break;
             case SoundEffect.BUTTON:
                 int index1 = Random.Range(0, _buttonAudioClips.Length);
-                _sfxAudioSource.PlayOneShot(_buttonAudioClips[index1]);
+                _sfxAudioSource.PlayOneShot(_buttonAudioClips[index1], volume);
                 break;
             case SoundEffect.COLLISION:
                 int index2 = Random.Range(0, _collisionAudioClips.Length);
-                _sfxAudioSource.PlayOneShot(_collisionAudioClips[index2]);
+                _sfxAudioSource.PlayOneShot(_collisionAudioClips[index2], volume);
                 break;
             case SoundEffect.EXPLOSION:
                 int index3 = Random.Range(0, _explosionAudioClips.Length);
-                _sfxAudioSource.PlayOneShot(_explosionAudioClips[index3]);
+                _sfxAudioSource.PlayOneShot(_explosionAudioClips[index3], volume);
                 break;
             default:
                 break;
@@ -130,7 +127,7 @@ public class AudioSingleton : MonoBehaviour
 
     public void StopMusic()
     {
-        if (_musicAudioSource.clip != null)
+        if (_musicAudioSource.clip != null || _musicAudioSource != null)
         {
             _musicAudioSource.Stop();
         }

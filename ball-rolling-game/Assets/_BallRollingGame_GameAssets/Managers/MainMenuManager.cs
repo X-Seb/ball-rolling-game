@@ -29,7 +29,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void ContinueButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.SetInt("FirstPlay", 1);
         LeavingScene();
         LevelLoader.instance.LoadSceneAsync(
@@ -38,63 +38,63 @@ public class MainMenuManager : MonoBehaviour
     
     public void LevelSelectionButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         levelSelectionMenu.SetActive(true);
         mainMenu.SetActive(false);
     }
 
     public void SettingsButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         settingsMenu.SetActive(true);
         mainMenu.SetActive(false);
     }
 
     public void QuitButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.Save();
         Application.Quit();
     }
 
     public void CreditsButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         creditsMenu.SetActive(true);
         mainMenu.SetActive(false);
     }
 
     public void CreditsBackButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         mainMenu.SetActive(true);
         creditsMenu.SetActive(false);
     }
 
     public void SettingsBackButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         mainMenu.SetActive(true);
         settingsMenu.SetActive(false);
     }
 
     public void LevelSelectionBackButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         mainMenu.SetActive(true);
         levelSelectionMenu.SetActive(false);
     }
 
     public void HowToPlayButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         mainMenu.SetActive(false);
         howToPlayMenu.SetActive(true);
     }
 
     public void HowToPlayBackButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         mainMenu.SetActive(true);
         howToPlayMenu.SetActive(false);
     }

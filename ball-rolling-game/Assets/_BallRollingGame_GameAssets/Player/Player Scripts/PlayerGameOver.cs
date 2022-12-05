@@ -15,7 +15,7 @@ public class PlayerGameOver : MonoBehaviour
         UIManager.instance.GameOver();
 
         //Plays explosion sound + deacreases the level music volume
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.EXPLOSION);
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.EXPLOSION, 1.0f);
         AudioSingleton.Instance.SetVolumeGradually(0.0f, 3.0f);
 
         //Changes the game state
