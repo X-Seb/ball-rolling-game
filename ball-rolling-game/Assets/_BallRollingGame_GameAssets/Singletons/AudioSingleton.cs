@@ -127,7 +127,7 @@ public class AudioSingleton : MonoBehaviour
 
     public void StopMusic()
     {
-        if (_musicAudioSource.clip != null)
+        if (_musicAudioSource.clip != null || _musicAudioSource != null)
         {
             _musicAudioSource.Stop();
         }
