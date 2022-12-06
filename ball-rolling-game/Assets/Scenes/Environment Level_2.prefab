@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5769653704889513666}
   m_Layer: 0
-  m_Name: Environment Leel_2
+  m_Name: Environment Level_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
