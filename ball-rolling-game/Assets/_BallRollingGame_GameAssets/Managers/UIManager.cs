@@ -129,7 +129,10 @@ public class UIManager : MonoBehaviour
 
     public void RestartLevelButton()
     {
-        if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
+        if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME ||
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.GAME_PAUSED ||
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYER_IS_DEAD ||
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYER_FINISHED_LEVEL)
         {
             AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
             LevelLoader.instance.SetQuickStart(true);
