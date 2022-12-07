@@ -66,6 +66,8 @@ public class UIManager : MonoBehaviour
             //Go straight to playing the game after setting volume to 0
             AudioSingleton.Instance.SetVolumeGradually(0.0f, 0.01f);
             GameStarted();
+
+            LevelLoader.instance.SetQuickStart(false);
         }
     }
 

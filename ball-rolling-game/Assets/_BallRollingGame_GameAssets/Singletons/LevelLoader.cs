@@ -106,8 +106,6 @@ public class LevelLoader : MonoBehaviour
         scene.allowSceneActivation = true;
         loadingCanvas.SetActive(false);
         targetSliderValue = 0;
-
-        _quickStart = false;
     }
 
     private void RandomizeFunnyText()
