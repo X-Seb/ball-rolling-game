@@ -16,10 +16,10 @@ public class CameraFollowPlayer : MonoBehaviour
     {
         if (_testing == true)
         {
+            //This always places the camera at the same pos relative to the player
             offset.x = 0f;
             offset.z = -8.5f;
-
-            newtrans = transform.position;
+            newtrans.y = player.transform.position.y + 6.0f;
         }
 
         if (_testing == false)
