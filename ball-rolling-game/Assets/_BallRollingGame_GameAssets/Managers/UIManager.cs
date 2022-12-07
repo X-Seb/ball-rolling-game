@@ -63,7 +63,8 @@ public class UIManager : MonoBehaviour
         }
         else if (LevelLoader.instance.ReturnQuickStart() == true)
         {
-            //Go straight to playing the game
+            //Go straight to playing the game after setting volume to 0
+            AudioSingleton.Instance.SetVolumeGradually(0.0f, 0.01f);
             GameStarted();
         }
     }
@@ -85,8 +86,8 @@ public class UIManager : MonoBehaviour
         AudioSingleton.Instance.SetVolumeGradually(1.0f, 2.0f);
         //Only activate the gameUI, so the player can start playing.
         mainCanvas.SetActive(true);
-        startingCanvas.SetActive(false);
         gameUI.SetActive(true);
+        startingCanvas.SetActive(false);
         pauseUI.SetActive(false);
         victoryUI.SetActive(false);
         gameOverUI.SetActive(false);
@@ -146,11 +147,8 @@ public class UIManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        //Turn off the pauseUI, make sure the game UI is activated
-        gameUI.SetActive(true);
-        pauseUI.SetActive(false);
-        //This will start the 3-2-1 GO screen
-        StartCoroutine(GameStarting());
+        //Start the game right away
+        GameStarted();
     }
 
     public void GameOver()
