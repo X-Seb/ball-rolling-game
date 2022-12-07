@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
             //Stop the music, then gradually increase it to 1
             AudioSingleton.Instance.StopMusic();
             AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
+            AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.MENU);
 
             //Make sure only the startingMenu from the StartingCanvas is active
             startingCanvas.SetActive(true);

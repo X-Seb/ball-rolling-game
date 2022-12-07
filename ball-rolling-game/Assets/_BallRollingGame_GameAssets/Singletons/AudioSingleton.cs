@@ -54,6 +54,7 @@ public class AudioSingleton : MonoBehaviour
     {
         SAD,
         VICTORY,
+        MENU,
         LEVEL_MUSIC
     }
 
@@ -95,6 +96,9 @@ public class AudioSingleton : MonoBehaviour
                 break;
             case Music.LEVEL_MUSIC:
                 _musicAudioSource.clip = _levelBackgroundMusic;
+                break;
+            case Music.MENU:
+                _musicAudioSource.clip = _startingMenuBackgroundMusic;
                 break;
             default:
                 break;
