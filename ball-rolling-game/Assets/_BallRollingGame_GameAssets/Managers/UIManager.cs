@@ -71,6 +71,15 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (InputCapture.instance.ReturnIsPlayerPressingKey(KeyCode.R))
+        {
+            //Does the exact same thing as restarting the level from the button
+            RestartLevelButton();
+        }
+    }
+
     public void StartGameFromStartingMenuButton()
     {
         //This is called by the green "Start" button in the StartingMenu
@@ -119,9 +128,12 @@ public class UIManager : MonoBehaviour
 
     public void RestartLevelButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
-        LevelLoader.instance.SetQuickStart(true);
-        LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
+        {
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
+            LevelLoader.instance.SetQuickStart(true);
+            LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void LoadMainMenuButton()
