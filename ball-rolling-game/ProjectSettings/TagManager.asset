@@ -8,6 +8,7 @@ TagManager:
   - Win Condition
   - Moving Platform
   - Movable Object
+  - Decoration
   layers:
   - Default
   - TransparentFX
