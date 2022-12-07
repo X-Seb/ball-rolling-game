@@ -28,6 +28,7 @@ public class PlayerGameOver : MonoBehaviour
     {
         //Waits 3 seconds before playing the sad music and increasing the volume over 2 seconds
         yield return new WaitForSecondsRealtime(3.0f);
+        GameManager.instance.SetGameState(GameManager.GameState.PLAYER_IS_DEAD);
         AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.SAD);
         AudioSingleton.Instance.SetVolumeGradually(1.0f, 2.0f);
     }

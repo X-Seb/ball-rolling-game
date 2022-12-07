@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
             //Stop the music, then gradually increase it to 1
             AudioSingleton.Instance.StopMusic();
             AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
+            AudioSingleton.Instance.PlayMusic(AudioSingleton.Music.MENU);
 
             //Make sure only the startingMenu from the StartingCanvas is active
             startingCanvas.SetActive(true);
@@ -128,7 +129,10 @@ public class UIManager : MonoBehaviour
 
     public void RestartLevelButton()
     {
-        if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
+        if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME ||
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.GAME_PAUSED ||
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYER_IS_DEAD ||
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYER_FINISHED_LEVEL)
         {
             AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
             LevelLoader.instance.SetQuickStart(true);
