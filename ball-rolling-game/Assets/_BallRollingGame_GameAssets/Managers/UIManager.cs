@@ -43,21 +43,41 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        //Make sure only the startingMenu from the StartingCanvas is active
-        startingCanvas.SetActive(true);
-        startingScreenUI.SetActive(true);
-        mainCanvas.SetActive(false);
-        pauseUI.SetActive(false);
-        gameOverUI.SetActive(false);
-        victoryUI.SetActive(false);
-        gameUI.SetActive(false);
+        if (LevelLoader.instance.ReturnQuickStart() == false)
+        {
+            //Stop the music, then gradually increase it to 1
+            AudioSingleton.Instance.StopMusic();
+            AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
 
-        //Stop the musicc, then gradually increase it to 1
-        AudioSingleton.Instance.StopMusic();
-        AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
+            //Make sure only the startingMenu from the StartingCanvas is active
+            startingCanvas.SetActive(true);
+            startingScreenUI.SetActive(true);
+            mainCanvas.SetActive(false);
+            pauseUI.SetActive(false);
+            gameOverUI.SetActive(false);
+            victoryUI.SetActive(false);
+            gameUI.SetActive(false);
 
-        //start the StartingMenu animation: 
-        StartCoroutine(SceneJustLoaded());
+            //start the StartingMenu animation: 
+            StartCoroutine(SceneJustLoaded());
+        }
+        else if (LevelLoader.instance.ReturnQuickStart() == true)
+        {
+            //Go straight to playing the game after setting volume to 0
+            AudioSingleton.Instance.SetVolumeGradually(0.0f, 0.01f);
+            GameStarted();
+
+            LevelLoader.instance.SetQuickStart(false);
+        }
+    }
+
+    private void Update()
+    {
+        if (InputCapture.instance.ReturnIsPlayerPressingKey(KeyCode.R))
+        {
+            //Does the exact same thing as restarting the level from the button
+            RestartLevelButton();
+        }
     }
 
     public void StartGameFromStartingMenuButton()
@@ -77,8 +97,8 @@ public class UIManager : MonoBehaviour
         AudioSingleton.Instance.SetVolumeGradually(1.0f, 2.0f);
         //Only activate the gameUI, so the player can start playing.
         mainCanvas.SetActive(true);
-        startingCanvas.SetActive(false);
         gameUI.SetActive(true);
+        startingCanvas.SetActive(false);
         pauseUI.SetActive(false);
         victoryUI.SetActive(false);
         gameOverUI.SetActive(false);
@@ -108,8 +128,12 @@ public class UIManager : MonoBehaviour
 
     public void RestartLevelButton()
     {
-        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
-        LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
+        {
+            AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
+            LevelLoader.instance.SetQuickStart(true);
+            LevelLoader.instance.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void LoadMainMenuButton()
@@ -137,11 +161,8 @@ public class UIManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        //Turn off the pauseUI, make sure the game UI is activated
-        gameUI.SetActive(true);
-        pauseUI.SetActive(false);
-        //This will start the 3-2-1 GO screen
-        StartCoroutine(GameStarting());
+        //Start the game right away
+        GameStarted();
     }
 
     public void GameOver()

@@ -21,6 +21,9 @@ public class LevelLoader : MonoBehaviour
     [Header("Other Scripts elements specific to certain scenes: ")]
     [SerializeField] MainMenuManager mainMenuManager;
 
+    [Header("This value tells the UI manager if you start playing as soon as the scene loads.")]
+    [SerializeField] private bool _quickStart = false;
+
     [Header("This is the list of available string for the funnyText: ")]
     [SerializeField] private List<string> funnyTextOptions;
 
@@ -109,5 +112,15 @@ public class LevelLoader : MonoBehaviour
     {
         int randomIndex = Random.Range(0, funnyTextOptions.Count);
         funnyText.text = funnyTextOptions[randomIndex];
+    }
+
+    public void SetQuickStart(bool value)
+    {
+        _quickStart = value;
+    }
+
+    public bool ReturnQuickStart()
+    {
+        return _quickStart;
     }
 }

@@ -32,16 +32,15 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-
-
     public void ResumeGame()
     {
         if (GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.GAME_PAUSED)
         {
-            //TODO: Deactivate pause screen, fade-out transition, 3-2-1 GO
+            //TODO: Deactivate pause screen, start playing right away
             UIManager.instance.ResumeGame();
-            GameManager.instance.SetGameState(GameManager.GameState.GAME_RESUMING_COUNTDOWN);
-            StartCoroutine(ResumeTransition());
+            Time.timeScale = 1.0f;
+            GameManager.instance.SetGameState(GameManager.GameState.PLAYING_GAME);
+            Debug.Log("Game should be resumed now...");
         }
     }
 
@@ -51,14 +50,5 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0.0f;
         UIManager.instance.PauseGame();
         GameManager.instance.SetGameState(GameManager.GameState.GAME_PAUSED);
-    }
-
-    private IEnumerator ResumeTransition()
-    {
-
-        yield return new WaitForSecondsRealtime(3.5f);
-        Time.timeScale = 1.0f;
-        GameManager.instance.SetGameState(GameManager.GameState.PLAYING_GAME);
-        Debug.Log("Game should be resumed now...");
     }
 }
