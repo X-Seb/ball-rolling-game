@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,18 +29,40 @@ public class LevelInfoDisplay : MonoBehaviour
     [Header("Others: ")]
     [SerializeField] private Image _timeBackground;
     [SerializeField] private Button _playButton;
+    [SerializeField] private Level _firstLevel;
+    [SerializeField] private Level _secondLevel;
+    [Header("The current level being displayed: ")]
     [SerializeField] private Level _level;
-
+ 
     private void Start()
     {
+
         SetButtonActive();
         SetText();
         SetDifficultyColors();
         SetTimeColor();
     }
 
+    public void SetAllLevelInfo(int levelIndex)
+    {
+        switch (levelIndex)
+        {
+            case 1:
+                _level = _firstLevel;
+                break;
+            case 2:
+                _level = _secondLevel;
+                break;
+            default:
+                break;
+        }
+    }
+
+
+
     public void PlayLevel()
     {
+        var _level = _firstLevel;
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.SetInt("FirstPlay", 1);
         LevelLoader.instance.LoadSceneAsync(_level.levelBuildIndex);
