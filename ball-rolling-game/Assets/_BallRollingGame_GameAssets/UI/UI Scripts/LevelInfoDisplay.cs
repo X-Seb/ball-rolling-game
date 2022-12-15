@@ -53,7 +53,6 @@ public class LevelInfoDisplay : MonoBehaviour
                 break;
         }
 
-
         SetText();
         SetDifficultyColors();
         SetTimeColor();

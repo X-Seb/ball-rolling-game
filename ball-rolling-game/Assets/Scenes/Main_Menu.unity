@@ -364,7 +364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 15582021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1218857777}
+        m_TargetAssemblyTypeName: LevelSelectionManager, Assembly-CSharp
+        m_MethodName: SetLevels
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &15582021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3903,6 +3915,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ce74817ab1d4640ace0a896c62f19f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _display1: {fileID: 1996372474}
+  _display2: {fileID: 6738989631718194383}
+  _display3: {fileID: 6738989633167526018}
+  _display4: {fileID: 6738989633673986271}
+  _currentLevelSet: 1
 --- !u!1 &1247163294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,7 +4221,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1329172858}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1218857777}
+        m_TargetAssemblyTypeName: LevelSelectionManager, Assembly-CSharp
+        m_MethodName: SetLevels
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1329172858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6005,7 +6034,9 @@ MonoBehaviour:
   _barDeactivated: {r: 0.33842114, g: 0.4118655, b: 0.4245283, a: 1}
   _timeBackground: {fileID: 3963179293952029682}
   _playButton: {fileID: 6514988932541149180}
-  _level: {fileID: 11400000, guid: cff8759cda61bd64ab1a3ec1acf8dbcf, type: 2}
+  _firstLevel: {fileID: 11400000, guid: cff8759cda61bd64ab1a3ec1acf8dbcf, type: 2}
+  _secondLevel: {fileID: 11400000, guid: 460684d21f5cf1a45b8ed34de4daf052, type: 2}
+  _level: {fileID: 0}
 --- !u!1 &2018489488
 GameObject:
   m_ObjectHideFlags: 0
@@ -13513,7 +13544,9 @@ MonoBehaviour:
   _barDeactivated: {r: 0.33842114, g: 0.4118655, b: 0.4245283, a: 1}
   _timeBackground: {fileID: 7675745426222741191}
   _playButton: {fileID: 570920001806215881}
-  _level: {fileID: 11400000, guid: 95ba76d4940b8364d99987b70a281a10, type: 2}
+  _firstLevel: {fileID: 11400000, guid: 95ba76d4940b8364d99987b70a281a10, type: 2}
+  _secondLevel: {fileID: 11400000, guid: 690be18c864beab45a47edc0311c440e, type: 2}
+  _level: {fileID: 0}
 --- !u!114 &6738989633122168048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13657,7 +13690,9 @@ MonoBehaviour:
   _barDeactivated: {r: 0.33842114, g: 0.4118655, b: 0.4245283, a: 1}
   _timeBackground: {fileID: 7675745426925027978}
   _playButton: {fileID: 570920000294280836}
-  _level: {fileID: 11400000, guid: 2adc21e28a960894c8cc017d7591d4a4, type: 2}
+  _firstLevel: {fileID: 11400000, guid: 2adc21e28a960894c8cc017d7591d4a4, type: 2}
+  _secondLevel: {fileID: 11400000, guid: ffbfd1bde8b915249a54cd57229cb753, type: 2}
+  _level: {fileID: 0}
 --- !u!1 &6738989633167526030
 GameObject:
   m_ObjectHideFlags: 0
@@ -13889,7 +13924,9 @@ MonoBehaviour:
   _barDeactivated: {r: 0.33842114, g: 0.4118655, b: 0.4245283, a: 1}
   _timeBackground: {fileID: 7675745427490212567}
   _playButton: {fileID: 570919999768942297}
-  _level: {fileID: 11400000, guid: 505ee345d32c7274b8ba9b43b8321d21, type: 2}
+  _firstLevel: {fileID: 11400000, guid: 505ee345d32c7274b8ba9b43b8321d21, type: 2}
+  _secondLevel: {fileID: 11400000, guid: 433741c53f576144aa3e2a72c7d60dd7, type: 2}
+  _level: {fileID: 0}
 --- !u!222 &7293114010339258071
 CanvasRenderer:
   m_ObjectHideFlags: 0

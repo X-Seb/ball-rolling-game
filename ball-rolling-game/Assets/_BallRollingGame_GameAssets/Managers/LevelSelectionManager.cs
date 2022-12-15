@@ -7,9 +7,6 @@ using UnityEngine.UI;
 //TODO: It allows you to switch between the level information shown.
 public class LevelSelectionManager : MonoBehaviour
 {
-    [Header("The buttons that change the levels: ")]
-    [SerializeField] private GameObject _button1;
-    [SerializeField] private GameObject _button2;
 
     [Header("The level info display scripts to call: ")]
     [SerializeField] private LevelInfoDisplay _display1;
@@ -21,7 +18,7 @@ public class LevelSelectionManager : MonoBehaviour
     [Header("The index of the current level set: ")]
     [SerializeField] private int _currentLevelSet = 1;
 
-
+    //This script should be called by the buttons that change the levels
     public void SetLevels(int buttonNumber)
     {
         _currentLevelSet = buttonNumber;
