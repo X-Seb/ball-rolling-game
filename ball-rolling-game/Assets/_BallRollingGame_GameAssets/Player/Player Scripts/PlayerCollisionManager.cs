@@ -28,6 +28,14 @@ public class PlayerCollisionManager : MonoBehaviour
             playerGameOver.PlayerDied();
         }
 
+        //Die if you hit a decoration
+        if (collision.gameObject.CompareTag("Decoration") &&
+            GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
+        {
+            playerGameOver.PlayerDied();
+        }
+
+        //Play a collision SFX when you hit a movable object
         if (collision.gameObject.CompareTag("Movable Object") && 
             GameManager.instance.ReturnCurrentGameState() == GameManager.GameState.PLAYING_GAME)
         {
