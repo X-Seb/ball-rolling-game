@@ -850,7 +850,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &233009686
 GameObject:
@@ -1345,10 +1345,10 @@ GameObject:
   - component: {fileID: 377874482}
   m_Layer: 0
   m_Name: Tilted long decoration
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &377874481
 Transform:
@@ -2914,10 +2914,10 @@ GameObject:
   - component: {fileID: 797055228}
   m_Layer: 0
   m_Name: '# Decorations'
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &797055228
 Transform:
@@ -3147,7 +3147,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821017767
 GameObject:
@@ -3603,7 +3603,7 @@ GameObject:
   m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &900898057
 Transform:
@@ -3713,7 +3713,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917087069
 GameObject:
@@ -4600,6 +4600,566 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1398070603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398070608}
+  - component: {fileID: 1398070607}
+  - component: {fileID: 1398070606}
+  - component: {fileID: 1398070605}
+  - component: {fileID: 1398070604}
+  m_Layer: 0
+  m_Name: Huge pyramid decoration
+  m_TagString: Decoration
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1398070604
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398070603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1626014880}
+--- !u!33 &1398070605
+MeshFilter:
+  m_ObjectHideFlags: 10
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398070603}
+  m_Mesh: {fileID: 1626014880}
+--- !u!23 &1398070606
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398070603}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 75cb7dbe023d92742a135dd3e0a751a0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 2
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1398070607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398070603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MeshFormatVersion: 2
+  m_Faces:
+  - m_Indexes: 020000000100000000000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 6
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 030000000400000005000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 080000000700000006000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 090000000a0000000b000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 0e0000000d0000000c000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 0f0000001000000011000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 140000001300000012000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 150000001600000017000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 1a0000001900000018000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 1b0000001c0000001d000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 200000001f0000001e000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 210000002200000023000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 260000002500000024000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 270000002800000029000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 2c0000002b0000002a000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 1
+    elementGroup: 0
+    m_TextureGroup: -1
+  - m_Indexes: 2d0000002e0000002f000000
+    m_SmoothingGroup: 0
+    m_Uv:
+      m_UseWorldSpace: 0
+      m_FlipU: 0
+      m_FlipV: 0
+      m_SwapUV: 0
+      m_Fill: 1
+      m_Scale: {x: 1, y: 1}
+      m_Offset: {x: 0, y: 0}
+      m_Rotation: 0
+      m_Anchor: 9
+    m_Material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+    m_SubmeshIndex: 0
+    m_ManualUV: 0
+    elementGroup: 0
+    m_TextureGroup: -1
+  m_SharedVertices:
+  - m_Vertices: 00000000030000002b0000002e000000
+  - m_Vertices: 01000000040000000600000009000000
+  - m_Vertices: 02000000080000000e000000140000001a00000020000000260000002c000000
+  - m_Vertices: 050000000b00000011000000170000001d00000023000000290000002f000000
+  - m_Vertices: 070000000a0000000c0000000f000000
+  - m_Vertices: 0d000000100000001200000015000000
+  - m_Vertices: 1300000016000000180000001b000000
+  - m_Vertices: 190000001c0000001e00000021000000
+  - m_Vertices: 1f000000220000002400000027000000
+  - m_Vertices: 25000000280000002a0000002d000000
+  m_SharedTextures: []
+  m_Positions:
+  - {x: 1, y: 0, z: 0.5}
+  - {x: 1.0000196, y: 0, z: 1.00002}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 1, y: 0, z: 0.5}
+  - {x: 1.0000196, y: 0, z: 1.00002}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 1.0000196, y: 0, z: 1.00002}
+  - {x: 0.50001, y: 0, z: 1.00002}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 1.0000196, y: 0, z: 1.00002}
+  - {x: 0.50001, y: 0, z: 1.00002}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 0.50001, y: 0, z: 1.00002}
+  - {x: 0, y: 0, z: 1.00002}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 0.50001, y: 0, z: 1.00002}
+  - {x: 0, y: 0, z: 1.00002}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 0, y: 0, z: 1.00002}
+  - {x: 0, y: 0, z: 0.49999997}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 0, y: 0, z: 1.00002}
+  - {x: 0, y: 0, z: 0.49999997}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 0, y: 0, z: 0.49999997}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 0, y: 0, z: 0.49999997}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0.5, y: 0, z: 0}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0.5, y: 0, z: 0}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 0.5, y: 0, z: 0}
+  - {x: 1.0000196, y: 0, z: 0}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 0.5, y: 0, z: 0}
+  - {x: 1.0000196, y: 0, z: 0}
+  - {x: 0.5, y: 0, z: 0.5}
+  - {x: 1.0000196, y: 0, z: 0}
+  - {x: 1, y: 0, z: 0.5}
+  - {x: 0.5, y: 1, z: 0.5}
+  - {x: 1.0000196, y: 0, z: 0}
+  - {x: 1, y: 0, z: 0.5}
+  - {x: 0.5, y: 0, z: 0.5}
+  m_Textures0:
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: -1, y: 0.5}
+  - {x: -1.0000196, y: 1.00002}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: -1.0000196, y: 1.00002}
+  - {x: -0.50001, y: 1.00002}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: -0.50001, y: 1.00002}
+  - {x: 0, y: 1.00002}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: 0, y: 1.00002}
+  - {x: 0, y: 0.49999997}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: 0, y: 0.49999997}
+  - {x: 0, y: 0}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: 0, y: 0}
+  - {x: -0.5, y: 0}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: -0.5, y: 0}
+  - {x: -1.0000196, y: 0}
+  - {x: -0.5, y: 0.5}
+  - {x: 0, y: 0}
+  - {x: 0.38268343, y: 0}
+  - {x: 0.19134167, y: 1.1015391}
+  - {x: -1.0000196, y: 0}
+  - {x: -1, y: 0.5}
+  - {x: -0.5, y: 0.5}
+  m_Textures2: []
+  m_Textures3: []
+  m_Tangents:
+  - {x: 0.000039092487, y: 0.000000013196221, z: 1, w: -1}
+  - {x: 0.000039092487, y: 0.000000013196221, z: 1, w: -1}
+  - {x: 0.000039092487, y: 0.000000013196221, z: 1, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 0, y: 0, z: -1, w: -1}
+  - {x: 0, y: 0, z: -1, w: -1}
+  - {x: 0, y: 0, z: -1, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 0, y: 0, z: -1, w: -1}
+  - {x: 0, y: 0, z: -1, w: -1}
+  - {x: 0, y: 0, z: -1, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -0.00003909405, y: -0.000000013196221, z: 1, w: -1}
+  - {x: -0.00003909405, y: -0.000000013196221, z: 1, w: -1}
+  - {x: -0.00003909405, y: -0.000000013196221, z: 1, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  m_Colors: []
+  m_UnwrapParameters:
+    m_HardAngle: 88
+    m_PackMargin: 20
+    m_AngleError: 8
+    m_AreaError: 15
+  m_PreserveMeshAssetOnDestroy: 0
+  assetGuid: 
+  m_Mesh: {fileID: 1626014880}
+  m_VersionIndex: 539
+  m_IsSelectable: 1
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
+--- !u!4 &1398070608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398070603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.50015, y: 1.50003, z: 1.50003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1433888752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4882,7 +5442,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507123667
 GameObject:
@@ -5235,6 +5795,170 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!43 &1626014880
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh-52044
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 48
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 29
+    localAABB:
+      m_Center: {x: 0.5000098, y: 0.5, z: 0.50001}
+      m_Extent: {x: 0.5000098, y: 0.5, z: 0.50001}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020003000400050006000700080004000900050006000a000b0009000c0005000d000e000f000c00100005000d001100120010001300050014001500160013001700050014001800190017001a00050000001b001c001a0003000500
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 29
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1392
+    _typelessdata: 0000003f0000803f0000003f2ef9643f2ef9e43e21ae12b83df7233898b562320000803f000080bf12ef433e3cff8c3fa400803f00000000a800803f2ef9643f2ef9e43e21ae12b83df7233898b562320000803f000080bf15efc33e000000000000803f000000000000003f2ef9643f2ef9e43e21ae12b83df7233898b562320000803f000080bf00000000000000000000803f000000000000003f00000000000080bf00000000000080bf0000000000000000000080bf000080bf0000003fa400803f00000000a800803f00000000000080bf00000000000080bf0000000000000000000080bfa40080bfa800803f0000003f000000000000003f00000000000080bf00000000000080bf0000000000000000000080bf000000bf0000003f0000003f0000803f0000003f000000000ffbe43eb6f8643f000080bf0000000000000000000080bf12ef433e3cff8c3fa800003f00000000a800803f000000000ffbe43eb6f8643f000080bf0000000000000000000080bf15efc33e00000000a400803f00000000a800803f000000000ffbe43eb6f8643f000080bf0000000000000000000080bf0000000000000000a800003f00000000a800803f00000000000080bf00000000000080bf0000000000000000000080bfa80000bfa800803f0000000000000000a800803f000000000ffbe43eb6f8643f000080bf0000000000000000000080bf15efc33e00000000a800003f00000000a800803f000000000ffbe43eb6f8643f000080bf0000000000000000000080bf00000000000000000000000000000000a800803f00000000000080bf00000000000080bf0000000000000000000080bf00000000a800803f0000003f0000803f0000003f2ef964bf2ef9e43e000000000000000000000000000080bf000080bf12ef433e3cff8c3f0000000000000000ffffff3e2ef964bf2ef9e43e000000000000000000000000000080bf000080bf15efc33e000000000000000000000000a800803f2ef964bf2ef9e43e000000000000000000000000000080bf000080bf00000000000000000000000000000000ffffff3e00000000000080bf00000000000080bf0000000000000000000080bf00000000ffffff3e0000000000000000000000002ff964bf2ff9e43e000000000000000000000000000080bf000080bf15efc33e000000000000000000000000ffffff3e2ff964bf2ff9e43e000000000000000000000000000080bf000080bf000000000000000000000000000000000000000000000000000080bf00000000000080bf0000000000000000000080bf00000000000000000000003f0000803f0000003f000000002ff9e43e2ff964bf0000803f0000000000000000000080bf12ef433e3cff8c3f0000003f0000000000000000000000002ff9e43e2ff964bf0000803f0000000000000000000080bf15efc33e00000000000000000000000000000000000000002ff9e43e2ff964bf0000803f0000000000000000000080bf00000000000000000000003f000000000000000000000000000080bf00000000000080bf0000000000000000000080bf000000bf00000000a400803f0000000000000000000000002ff9e43e2ff964bf0000803f0000000000000000000080bf15efc33e000000000000003f0000000000000000000000002ff9e43e2ff964bf0000803f0000000000000000000080bf0000000000000000a400803f000000000000000000000000000080bf00000000000080bf0000000000000000000080bfa40080bf000000000000803f000000000000003f2ff9643f2ff9e43ea2af1238ebf823b898b562b20000803f000080bf15efc33e00000000a400803f00000000000000002ff9643f2ff9e43ea2af1238ebf823b898b562b20000803f000080bf0000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.5000098, y: 0.5, z: 0.50001}
+    m_Extent: {x: 0.5000098, y: 0.5, z: 0.50001}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1635703904
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,7 +6111,7 @@ GameObject:
   m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1676237929
 Transform:
@@ -5529,7 +6253,7 @@ GameObject:
   m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1738466023
 Transform:
@@ -6239,7 +6963,7 @@ PrefabInstance:
     - target: {fileID: 155137217491651154, guid: 9bb57230465fae74da5a9fe3869eeb4b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 155137217491651154, guid: 9bb57230465fae74da5a9fe3869eeb4b,
         type: 3}
@@ -6403,7 +7127,7 @@ PrefabInstance:
     - target: {fileID: 598814590033489884, guid: fe515acb999004811b77a4dda58cf477,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 598814590033489884, guid: fe515acb999004811b77a4dda58cf477,
         type: 3}
@@ -9985,7 +10709,7 @@ GameObject:
   - component: {fileID: 2907255303160098880}
   m_Layer: 0
   m_Name: Spike (45)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10054,7 +10778,7 @@ GameObject:
   - component: {fileID: 2907255303217805398}
   m_Layer: 0
   m_Name: Spike (58)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10229,7 +10953,7 @@ GameObject:
   - component: {fileID: 2907255303219756637}
   m_Layer: 0
   m_Name: Spike (66)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10263,7 +10987,7 @@ GameObject:
   - component: {fileID: 2907255303220358871}
   m_Layer: 0
   m_Name: Spike (50)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10373,7 +11097,7 @@ GameObject:
   - component: {fileID: 2907255303238946052}
   m_Layer: 0
   m_Name: Spike (112)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10512,7 +11236,7 @@ GameObject:
   - component: {fileID: 2907255303242435649}
   m_Layer: 0
   m_Name: Spike (106)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10617,7 +11341,7 @@ GameObject:
   - component: {fileID: 2907255303248709835}
   m_Layer: 0
   m_Name: Spike (36)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10714,7 +11438,7 @@ GameObject:
   - component: {fileID: 2907255303286898099}
   m_Layer: 0
   m_Name: Spike (111)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10811,7 +11535,7 @@ GameObject:
   - component: {fileID: 2907255303300659610}
   m_Layer: 0
   m_Name: Spike (72)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10858,7 +11582,7 @@ GameObject:
   - component: {fileID: 2907255303304803832}
   m_Layer: 0
   m_Name: Spike (107)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10955,7 +11679,7 @@ GameObject:
   - component: {fileID: 2907255303322082360}
   m_Layer: 0
   m_Name: Spike (34)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11094,7 +11818,7 @@ GameObject:
   - component: {fileID: 2907255303328316841}
   m_Layer: 0
   m_Name: Spike (78)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11199,7 +11923,7 @@ GameObject:
   - component: {fileID: 2907255303337305500}
   m_Layer: 0
   m_Name: Spike (6)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11218,7 +11942,7 @@ GameObject:
   - component: {fileID: 2907255303358813434}
   m_Layer: 0
   m_Name: Spike (42)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11330,7 +12054,7 @@ GameObject:
   - component: {fileID: 2907255303360753979}
   m_Layer: 0
   m_Name: Spike (64)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11440,7 +12164,7 @@ GameObject:
   - component: {fileID: 2907255303372881284}
   m_Layer: 0
   m_Name: Spike (69)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11587,7 +12311,7 @@ GameObject:
   - component: {fileID: 2907255303421408043}
   m_Layer: 0
   m_Name: Spike (67)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11621,7 +12345,7 @@ GameObject:
   - component: {fileID: 2907255303421928635}
   m_Layer: 0
   m_Name: Spike (22)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11760,7 +12484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2907255303436488716}
   m_LocalRotation: {x: 0.042296387, y: -0.95294034, z: 0.2553397, w: 0.1578524}
-  m_LocalPosition: {x: 5.50011, y: -6.00012, z: 24.00048}
+  m_LocalPosition: {x: 17.00034, y: -6.50013, z: 22.00044}
   m_LocalScale: {x: 2, y: 15, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11781,7 +12505,7 @@ GameObject:
   - component: {fileID: 2907255303436488706}
   m_Layer: 0
   m_Name: Spike (2)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11870,7 +12594,7 @@ GameObject:
   - component: {fileID: 2907255303442787465}
   m_Layer: 0
   m_Name: Spike (70)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11925,7 +12649,7 @@ GameObject:
   - component: {fileID: 2907255303461516548}
   m_Layer: 0
   m_Name: Spike (73)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12072,7 +12796,7 @@ GameObject:
   - component: {fileID: 2907255303462955818}
   m_Layer: 0
   m_Name: Spike (28)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12091,7 +12815,7 @@ GameObject:
   - component: {fileID: 2907255303473356022}
   m_Layer: 0
   m_Name: Spike (93)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12266,7 +12990,7 @@ GameObject:
   - component: {fileID: 2907255303483879796}
   m_Layer: 0
   m_Name: Spike (29)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12313,7 +13037,7 @@ GameObject:
   - component: {fileID: 2907255303487465008}
   m_Layer: 0
   m_Name: Spike (55)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12460,7 +13184,7 @@ GameObject:
   - component: {fileID: 2907255303504928869}
   m_Layer: 0
   m_Name: Spike (19)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12557,7 +13281,7 @@ GameObject:
   - component: {fileID: 2907255303584620629}
   m_Layer: 0
   m_Name: Spike (119)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12633,7 +13357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2907255303588710503}
   m_LocalRotation: {x: -0.08516016, y: 0.9121417, z: -0.24440812, w: -0.3178207}
-  m_LocalPosition: {x: 10.533203, y: -6.6251326, z: 24.056887}
+  m_LocalPosition: {x: 15.0003, y: -6.6251326, z: 43.000862}
   m_LocalScale: {x: 2, y: 15, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12654,7 +13378,7 @@ GameObject:
   - component: {fileID: 2907255303588710501}
   m_Layer: 0
   m_Name: Spike (116)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12673,7 +13397,7 @@ GameObject:
   - component: {fileID: 2907255303629075350}
   m_Layer: 0
   m_Name: Spike (53)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12848,7 +13572,7 @@ GameObject:
   - component: {fileID: 2907255303636920148}
   m_Layer: 0
   m_Name: Spike (92)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -12945,7 +13669,7 @@ GameObject:
   - component: {fileID: 2907255303650195397}
   m_Layer: 0
   m_Name: Spike (76)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13042,7 +13766,7 @@ GameObject:
   - component: {fileID: 2907255303673423996}
   m_Layer: 0
   m_Name: Spike (3)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13139,7 +13863,7 @@ GameObject:
   - component: {fileID: 2907255303673654653}
   m_Layer: 0
   m_Name: Spike (80)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13228,7 +13952,7 @@ GameObject:
   - component: {fileID: 2907255303681801865}
   m_Layer: 0
   m_Name: Spike (89)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13333,7 +14057,7 @@ GameObject:
   - component: {fileID: 2907255303685732604}
   m_Layer: 0
   m_Name: Spike (25)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13380,7 +14104,7 @@ GameObject:
   - component: {fileID: 2907255303719393184}
   m_Layer: 0
   m_Name: Spike (43)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13464,7 +14188,7 @@ GameObject:
   - component: {fileID: 2907255303758195103}
   m_Layer: 0
   m_Name: Spike (86)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13561,7 +14285,7 @@ GameObject:
   - component: {fileID: 2907255303775970175}
   m_Layer: 0
   m_Name: Spike (57)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13658,7 +14382,7 @@ GameObject:
   - component: {fileID: 2907255303791332359}
   m_Layer: 0
   m_Name: Spike (95)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13818,7 +14542,7 @@ GameObject:
   - component: {fileID: 2907255303829335907}
   m_Layer: 0
   m_Name: Spike (33)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13915,7 +14639,7 @@ GameObject:
   - component: {fileID: 2907255303833649948}
   m_Layer: 0
   m_Name: Spike (118)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14004,7 +14728,7 @@ GameObject:
   - component: {fileID: 2907255303835361257}
   m_Layer: 0
   m_Name: Spike (62)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14059,7 +14783,7 @@ GameObject:
   - component: {fileID: 2907255303839747776}
   m_Layer: 0
   m_Name: Spike (102)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14206,7 +14930,7 @@ GameObject:
   - component: {fileID: 2907255303855825498}
   m_Layer: 0
   m_Name: Spike (85)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14253,7 +14977,7 @@ GameObject:
   - component: {fileID: 2907255303889842696}
   m_Layer: 0
   m_Name: Spike (113)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14322,7 +15046,7 @@ GameObject:
   - component: {fileID: 2907255303937266582}
   m_Layer: 0
   m_Name: Spike (23)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14489,7 +15213,7 @@ GameObject:
   - component: {fileID: 2907255303942549881}
   m_Layer: 0
   m_Name: Spike (109)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14586,7 +15310,7 @@ GameObject:
   - component: {fileID: 2907255303955313705}
   m_Layer: 0
   m_Name: Spike (51)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14691,7 +15415,7 @@ GameObject:
   - component: {fileID: 2907255303963617538}
   m_Layer: 0
   m_Name: Spike (88)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14788,7 +15512,7 @@ GameObject:
   - component: {fileID: 2907255304007922066}
   m_Layer: 0
   m_Name: Spike (24)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14807,7 +15531,7 @@ GameObject:
   - component: {fileID: 2907255304030352910}
   m_Layer: 0
   m_Name: Spike (16)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14974,7 +15698,7 @@ GameObject:
   - component: {fileID: 2907255304035075737}
   m_Layer: 0
   m_Name: Spike (18)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15029,7 +15753,7 @@ GameObject:
   - component: {fileID: 2907255304038815440}
   m_Layer: 0
   m_Name: Spike (77)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15176,7 +15900,7 @@ GameObject:
   - component: {fileID: 2907255304051457404}
   m_Layer: 0
   m_Name: Spike (79)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15273,7 +15997,7 @@ GameObject:
   - component: {fileID: 2907255304068453355}
   m_Layer: 0
   m_Name: Spike (117)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15320,7 +16044,7 @@ GameObject:
   - component: {fileID: 2907255304081065432}
   m_Layer: 0
   m_Name: Spike (56)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15467,7 +16191,7 @@ GameObject:
   - component: {fileID: 2907255304095107530}
   m_Layer: 0
   m_Name: Spike (100)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15556,7 +16280,7 @@ GameObject:
   - component: {fileID: 2907255304113771225}
   m_Layer: 0
   m_Name: Spike (103)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15661,7 +16385,7 @@ GameObject:
   - component: {fileID: 2907255304118565964}
   m_Layer: 0
   m_Name: Spike (26)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15708,7 +16432,7 @@ GameObject:
   - component: {fileID: 2907255304135774992}
   m_Layer: 0
   m_Name: Spike (44)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15792,7 +16516,7 @@ GameObject:
   - component: {fileID: 2907255304155764255}
   m_Layer: 0
   m_Name: Spike (37)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15952,7 +16676,7 @@ GameObject:
   - component: {fileID: 2907255304158122293}
   m_Layer: 0
   m_Name: Spike (32)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -15971,7 +16695,7 @@ GameObject:
   - component: {fileID: 2907255304163296982}
   m_Layer: 0
   m_Name: Spike (96)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16096,7 +16820,7 @@ GameObject:
   - component: {fileID: 2907255304189111224}
   m_Layer: 0
   m_Name: Spike (90)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16193,7 +16917,7 @@ GameObject:
   - component: {fileID: 2907255304219592624}
   m_Layer: 0
   m_Name: Spike (13)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16340,7 +17064,7 @@ GameObject:
   - component: {fileID: 2907255304225466226}
   m_Layer: 0
   m_Name: Spike (35)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16387,7 +17111,7 @@ GameObject:
   - component: {fileID: 2907255304265294048}
   m_Layer: 0
   m_Name: Spike (60)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16534,7 +17258,7 @@ GameObject:
   - component: {fileID: 2907255304268501186}
   m_Layer: 0
   m_Name: Spike (12)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16568,7 +17292,7 @@ GameObject:
   - component: {fileID: 2907255304283887551}
   m_Layer: 0
   m_Name: Spike (27)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16728,7 +17452,7 @@ GameObject:
   - component: {fileID: 2907255304287180338}
   m_Layer: 0
   m_Name: Spike (115)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16825,7 +17549,7 @@ GameObject:
   - component: {fileID: 2907255304292529307}
   m_Layer: 0
   m_Name: Spike (9)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16844,7 +17568,7 @@ GameObject:
   - component: {fileID: 2907255304293958294}
   m_Layer: 0
   m_Name: Spike (82)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -16956,7 +17680,7 @@ GameObject:
   - component: {fileID: 2907255304302050399}
   m_Layer: 0
   m_Name: Spike (105)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17116,7 +17840,7 @@ GameObject:
   - component: {fileID: 2907255304302117813}
   m_Layer: 0
   m_Name: Spike (108)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17150,7 +17874,7 @@ GameObject:
   - component: {fileID: 2907255304304752903}
   m_Layer: 0
   m_Name: Spike (65)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17247,7 +17971,7 @@ GameObject:
   - component: {fileID: 2907255304322116551}
   m_Layer: 0
   m_Name: Spike (54)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17329,7 +18053,7 @@ GameObject:
   - component: {fileID: 2907255304368817662}
   m_Layer: 0
   m_Name: Spike (30)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17504,7 +18228,7 @@ GameObject:
   - component: {fileID: 2907255304373634028}
   m_Layer: 0
   m_Name: Spike (38)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17551,7 +18275,7 @@ GameObject:
   - component: {fileID: 2907255304446573664}
   m_Layer: 0
   m_Name: Spike (110)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17620,7 +18344,7 @@ GameObject:
   - component: {fileID: 2907255304454211646}
   m_Layer: 0
   m_Name: Spike (61)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17795,7 +18519,7 @@ GameObject:
   - component: {fileID: 2907255304475556467}
   m_Layer: 0
   m_Name: Spike (5)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17884,7 +18608,7 @@ GameObject:
   - component: {fileID: 2907255304487888969}
   m_Layer: 0
   m_Name: Spike (48)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -17989,7 +18713,7 @@ GameObject:
   - component: {fileID: 2907255304513353674}
   m_Layer: 0
   m_Name: Spike (20)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18023,7 +18747,7 @@ GameObject:
   - component: {fileID: 2907255304538113087}
   m_Layer: 0
   m_Name: Spike (39)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18183,7 +18907,7 @@ GameObject:
   - component: {fileID: 2907255304559267796}
   m_Layer: 0
   m_Name: Spike (31)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18259,7 +18983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2907255304559719358}
   m_LocalRotation: {x: 0.25000006, y: 0.25000006, z: -0.06698733, w: 0.9330127}
-  m_LocalPosition: {x: -9.500191, y: -6.00012, z: 5.50011}
+  m_LocalPosition: {x: -12.50025, y: -6.00012, z: 6.50013}
   m_LocalScale: {x: 2, y: 15, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18280,7 +19004,7 @@ GameObject:
   - component: {fileID: 2907255304559719356}
   m_Layer: 0
   m_Name: Spike
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18377,7 +19101,7 @@ GameObject:
   - component: {fileID: 2907255304560184308}
   m_Layer: 0
   m_Name: Spike (52)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18474,7 +19198,7 @@ GameObject:
   - component: {fileID: 2907255304626559077}
   m_Layer: 0
   m_Name: Spike (99)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18571,7 +19295,7 @@ GameObject:
   - component: {fileID: 2907255304642262746}
   m_Layer: 0
   m_Name: Spike (21)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18618,7 +19342,7 @@ GameObject:
   - component: {fileID: 2907255304650546816}
   m_Layer: 0
   m_Name: Spike (8)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18765,7 +19489,7 @@ GameObject:
   - component: {fileID: 2907255304664818764}
   m_Layer: 0
   m_Name: Spike (14)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18784,7 +19508,7 @@ GameObject:
   - component: {fileID: 2907255304725299854}
   m_Layer: 0
   m_Name: Spike (41)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18909,7 +19633,7 @@ GameObject:
   - component: {fileID: 2907255304759720968}
   m_Layer: 0
   m_Name: Spike (68)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -18978,7 +19702,7 @@ GameObject:
   - component: {fileID: 2907255304779485494}
   m_Layer: 0
   m_Name: Spike (104)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19145,7 +19869,7 @@ GameObject:
   - component: {fileID: 2907255304784642825}
   m_Layer: 0
   m_Name: Spike (47)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19187,7 +19911,7 @@ GameObject:
   - component: {fileID: 2907255304791302471}
   m_Layer: 0
   m_Name: Spike (1)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19339,7 +20063,7 @@ GameObject:
   - component: {fileID: 2907255304814110393}
   m_Layer: 0
   m_Name: Spike (84)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19444,7 +20168,7 @@ GameObject:
   - component: {fileID: 2907255304826425403}
   m_Layer: 0
   m_Name: Spike (87)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19463,7 +20187,7 @@ GameObject:
   - component: {fileID: 2907255304833694814}
   m_Layer: 0
   m_Name: Spike (15)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19575,7 +20299,7 @@ GameObject:
   - component: {fileID: 2907255304867944087}
   m_Layer: 0
   m_Name: Spike (94)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19727,7 +20451,7 @@ GameObject:
   - component: {fileID: 2907255304893767409}
   m_Layer: 0
   m_Name: Spike (7)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19824,7 +20548,7 @@ GameObject:
   - component: {fileID: 2907255304896502833}
   m_Layer: 0
   m_Name: Spike (83)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -19929,7 +20653,7 @@ GameObject:
   - component: {fileID: 2907255304923430699}
   m_Layer: 0
   m_Name: Spike (4)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20018,7 +20742,7 @@ GameObject:
   - component: {fileID: 2907255304924652249}
   m_Layer: 0
   m_Name: Spike (71)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20115,7 +20839,7 @@ GameObject:
   - component: {fileID: 2907255304927778089}
   m_Layer: 0
   m_Name: Spike (91)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20142,7 +20866,7 @@ GameObject:
   - component: {fileID: 2907255304930728470}
   m_Layer: 0
   m_Name: Spike (114)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20254,7 +20978,7 @@ GameObject:
   - component: {fileID: 2907255304984633799}
   m_Layer: 0
   m_Name: Spike (63)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20414,7 +21138,7 @@ GameObject:
   - component: {fileID: 2907255305009131610}
   m_Layer: 0
   m_Name: Spike (49)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20448,7 +21172,7 @@ GameObject:
   - component: {fileID: 2907255305024307511}
   m_Layer: 0
   m_Name: Spike (46)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20608,7 +21332,7 @@ GameObject:
   - component: {fileID: 2907255305035406972}
   m_Layer: 0
   m_Name: Spike (74)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20705,7 +21429,7 @@ GameObject:
   - component: {fileID: 2907255305057486388}
   m_Layer: 0
   m_Name: Spike (75)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20739,7 +21463,7 @@ GameObject:
   - component: {fileID: 2907255305130295163}
   m_Layer: 0
   m_Name: Spike (40)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20815,7 +21539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2907255305139060457}
   m_LocalRotation: {x: -0.2536133, y: 0.19275865, z: -0.05164958, w: -0.9464971}
-  m_LocalPosition: {x: -0.06863165, y: -6.00012, z: 31.064548}
+  m_LocalPosition: {x: -5.0001, y: -6.00012, z: 29.00058}
   m_LocalScale: {x: 2, y: 15, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20836,7 +21560,7 @@ GameObject:
   - component: {fileID: 2907255305139060463}
   m_Layer: 0
   m_Name: Spike (10)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20996,7 +21720,7 @@ GameObject:
   - component: {fileID: 2907255305179374275}
   m_Layer: 0
   m_Name: Spike (11)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21093,7 +21817,7 @@ GameObject:
   - component: {fileID: 2907255305197578843}
   m_Layer: 0
   m_Name: Spike (59)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21182,7 +21906,7 @@ GameObject:
   - component: {fileID: 2907255305230935649}
   m_Layer: 0
   m_Name: Spike (81)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21224,7 +21948,7 @@ GameObject:
   - component: {fileID: 2907255305260968975}
   m_Layer: 0
   m_Name: Spike (17)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21384,7 +22108,7 @@ GameObject:
   - component: {fileID: 2907255305277608812}
   m_Layer: 0
   m_Name: Spike (98)
-  m_TagString: Untagged
+  m_TagString: Decoration
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -22435,7 +23159,7 @@ PrefabInstance:
     - target: {fileID: 7978122633437850529, guid: ac2c662529cb64d63897a57c6c290204,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7978122633437850529, guid: ac2c662529cb64d63897a57c6c290204,
         type: 3}
