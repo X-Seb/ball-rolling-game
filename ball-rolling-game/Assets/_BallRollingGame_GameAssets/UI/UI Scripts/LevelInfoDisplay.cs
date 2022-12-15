@@ -36,11 +36,7 @@ public class LevelInfoDisplay : MonoBehaviour
  
     private void Start()
     {
-
-        SetButtonActive();
-        SetText();
-        SetDifficultyColors();
-        SetTimeColor();
+        SetAllLevelInfo(1);
     }
 
     public void SetAllLevelInfo(int levelIndex)
@@ -56,13 +52,16 @@ public class LevelInfoDisplay : MonoBehaviour
             default:
                 break;
         }
+
+
+        SetText();
+        SetDifficultyColors();
+        SetTimeColor();
+        SetButtonActive();
     }
-
-
 
     public void PlayLevel()
     {
-        var _level = _firstLevel;
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.SetInt("FirstPlay", 1);
         LevelLoader.instance.LoadSceneAsync(_level.levelBuildIndex);
@@ -70,15 +69,17 @@ public class LevelInfoDisplay : MonoBehaviour
 
     private void SetButtonActive()
     {
+        //Checks if the level has been unlocked before activating it
+        if (_level == null)
+        {
+            _playButton.interactable = false;
+        }
+
         if (_level.levelUnlocked)
         {
             _playButton.interactable = true;
         }
         else
-        {
-            _playButton.interactable = false;
-        }
-        if (_level == null)
         {
             _playButton.interactable = false;
         }
@@ -151,7 +152,6 @@ public class LevelInfoDisplay : MonoBehaviour
                 break;
         }
     }
-
     private void SetTimeColor()
     {
         //Set the color of the time background, depending on how long you have to complete it
