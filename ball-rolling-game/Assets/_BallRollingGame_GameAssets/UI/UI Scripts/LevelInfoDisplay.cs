@@ -83,6 +83,7 @@ public class LevelInfoDisplay : MonoBehaviour
             _playButton.interactable = false;
         }
     }
+
     private void SetText()
     {
         //Set the level name, description, and the time to complete it

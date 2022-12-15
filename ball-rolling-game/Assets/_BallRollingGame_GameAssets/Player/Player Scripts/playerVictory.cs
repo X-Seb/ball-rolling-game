@@ -14,6 +14,7 @@ public class playerVictory : MonoBehaviour
         Debug.Log("The player just won the game!");
         //Save the fact that the player just finished this level and which stars they just collected
         PlayerPrefs.SetInt("Level_" + _level.levelBuildIndex.ToString() + "_Completed", 1);
+        PlayerPrefs.SetInt("Level_" + (_level.levelBuildIndex + 1).ToString() + "_Unlocked", 1);
 
         //Record the player's time to complete the level, since they never finished it before
         if (!PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime"))
