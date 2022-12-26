@@ -10,6 +10,7 @@ public class PauseManager : MonoBehaviour
         //TODO: Set the time to 0 and set it to 1 when the game starts
         Time.timeScale = 1.0f;
     }
+
     private void Update()
     {
         if (InputCapture.instance.ReturnIsPlayerPressingKey(KeyCode.P))

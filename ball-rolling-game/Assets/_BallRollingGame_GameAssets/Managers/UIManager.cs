@@ -61,6 +61,8 @@ public class UIManager : MonoBehaviour
 
             //start the StartingMenu animation: 
             StartCoroutine(SceneJustLoaded());
+
+            GameManager.instance.SetGameState(GameManager.GameState.MENU_STARTING_TRANSITION);
         }
         else if (LevelLoader.instance.ReturnQuickStart() == true)
         {
@@ -69,6 +71,7 @@ public class UIManager : MonoBehaviour
             GameStarted();
 
             LevelLoader.instance.SetQuickStart(false);
+            GameManager.instance.SetGameState(GameManager.GameState.PLAYING_GAME);
         }
     }
 
