@@ -45,6 +45,7 @@ public class UIManager : MonoBehaviour
     {
         if (LevelLoader.instance.ReturnQuickStart() == false)
         {
+            Debug.Log("No quickstart!");
             //Stop the music, then gradually increase it to 1
             AudioSingleton.Instance.StopMusic();
             AudioSingleton.Instance.SetVolumeGradually(1.0f, 3.0f);
@@ -66,6 +67,7 @@ public class UIManager : MonoBehaviour
         }
         else if (LevelLoader.instance.ReturnQuickStart() == true)
         {
+            Debug.Log("Quick Start!");
             //Go straight to playing the game after setting volume to 0
             AudioSingleton.Instance.SetVolumeGradually(0.0f, 0.01f);
             GameStarted();

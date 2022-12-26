@@ -36,10 +36,6 @@ public class GameManager : MonoBehaviour
         {
             SetGameState(GameState.MAIN_MENU_SCENE);
         }
-        else
-        {
-            SetGameState(GameState.MENU_STARTING_TRANSITION);
-        }
 
         //Unlocks the first level if you never played before
         if (!PlayerPrefs.HasKey("Level_1_Unlocked"))
