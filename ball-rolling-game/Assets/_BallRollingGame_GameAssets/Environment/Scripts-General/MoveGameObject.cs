@@ -30,7 +30,7 @@ public class MoveGameObject : MonoBehaviour
                 _transformList[i].position.y, _transformList[i].position.z);
             Vector3 targetPos = new Vector3(_startingPos.x + _xDisplacement,
                 _startingPos.y + _yDisplacement, _startingPos.z + _zDisplacement);
-
+             
             _transformList[i].DOMove(targetPos, _cycleTime).SetEase(_typeOfEasing).SetLoops(_numberOfLoops, _loopType);
         }
     }
