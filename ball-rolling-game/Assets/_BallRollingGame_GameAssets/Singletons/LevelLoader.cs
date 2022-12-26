@@ -106,6 +106,12 @@ public class LevelLoader : MonoBehaviour
         scene.allowSceneActivation = true;
         loadingCanvas.SetActive(false);
         targetSliderValue = 0;
+
+        await Task.Delay(100);
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            mainMenuManager = GameObject.Find("MainMenuManager").GetComponent<MainMenuManager>();
+        }
     }
 
     private void RandomizeFunnyText()
