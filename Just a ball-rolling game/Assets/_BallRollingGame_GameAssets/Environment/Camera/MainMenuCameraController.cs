@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//This script is used to rotate the camera in the main menu scene
 public class MainMenuCameraController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject _gameObjectToRotate;
+    [Header("Note: The angle has to be very small since the object is rotated by that amount in FixedUpdate.")]
+    [SerializeField] private float xAngle, yAngle, zAngle;
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        Vector3 rotation = new Vector3(0, 0, 0);
+        _gameObjectToRotate.transform.Rotate(xAngle, yAngle, xAngle, Space.Self);
     }
 }
