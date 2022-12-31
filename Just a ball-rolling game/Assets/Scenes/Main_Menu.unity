@@ -18415,7 +18415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObjectToRotate: {fileID: 906223875}
   xAngle: 0
-  yAngle: 0.1
+  yAngle: 3
   zAngle: 0
 --- !u!1 &915458148
 GameObject:

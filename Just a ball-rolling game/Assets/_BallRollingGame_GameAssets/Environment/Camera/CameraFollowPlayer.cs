@@ -39,5 +39,4 @@ public class CameraFollowPlayer : MonoBehaviour
         //Move the camera to that position
         transform.position = newtrans;
     }
-
 }
