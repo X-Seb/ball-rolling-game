@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d73c1fdf1b8f3346b0aca9f95251ea9, type: 3}
   m_Name: Level_7
   m_EditorClassIdentifier: 
-  levelName: The never ending path
-  levelDescription: Just keep going straight. Make sure not to fall off.
-  levelDifficulty: 3
+  levelName: The Never-Ending Path
+  levelDescription: Just keep going straight. Make sure not to fall off...
+  levelDifficulty: 4
   timeToCompleteLevel: 130
   levelBuildIndex: 7
-  levelCompleted: 0
-  levelUnlocked: 0
-  fastestTime: -1
+  levelCompleted: 1
+  levelUnlocked: 1
+  fastestTime: 96.76553

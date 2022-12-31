@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d73c1fdf1b8f3346b0aca9f95251ea9, type: 3}
   m_Name: Level_6
   m_EditorClassIdentifier: 
-  levelName: Just another level
-  levelDescription: There is no escape this time...
-  levelDifficulty: 3
-  timeToCompleteLevel: 60
+  levelName: Putting It Together
+  levelDescription: Movable obstacles, red enemies, moving platforms and inclined
+    surfaces... This level's got it all.
+  levelDifficulty: 4
+  timeToCompleteLevel: 70
   levelBuildIndex: 6
-  levelCompleted: 0
-  levelUnlocked: 0
-  fastestTime: -1
+  levelCompleted: 1
+  levelUnlocked: 1
+  fastestTime: 37.661236

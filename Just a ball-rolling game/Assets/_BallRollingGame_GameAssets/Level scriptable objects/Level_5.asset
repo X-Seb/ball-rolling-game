@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Level_5
   m_EditorClassIdentifier: 
   levelName: An extra layer of pain
-  levelDescription: Let's see how you do when objects are moving. Good luck!
-  levelDifficulty: 2
+  levelDescription: Let's see how you do when objects are moving.
+  levelDifficulty: 3
   timeToCompleteLevel: 60
   levelBuildIndex: 5
   levelCompleted: 1
   levelUnlocked: 0
-  fastestTime: 6.263774
+  fastestTime: 1.3608156

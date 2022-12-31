@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d73c1fdf1b8f3346b0aca9f95251ea9, type: 3}
   m_Name: Level_8
   m_EditorClassIdentifier: 
-  levelName: The maze of doom
-  levelDescription: This is the last level... Good luck.
+  levelName: The Maze Of Dooooom
+  levelDescription: This is the final level... Good luck. (you'll need it)
   levelDifficulty: 5
   timeToCompleteLevel: 180
   levelBuildIndex: 8
-  levelCompleted: 0
+  levelCompleted: 1
   levelUnlocked: 0
-  fastestTime: -1
+  fastestTime: 16.261292

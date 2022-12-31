@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d73c1fdf1b8f3346b0aca9f95251ea9, type: 3}
   m_Name: Level_3
   m_EditorClassIdentifier: 
-  levelName: The Trial
+  levelName: No More Training Walls
   levelDescription: It's time to put your skills to good use...
   levelDifficulty: 2
-  timeToCompleteLevel: 80
+  timeToCompleteLevel: 70
   levelBuildIndex: 3
-  levelCompleted: 0
-  levelUnlocked: 0
-  fastestTime: -1
+  levelCompleted: 1
+  levelUnlocked: 1
+  fastestTime: 38.45329
