@@ -16,11 +16,11 @@ PlayerSettings:
   productName: Just A Ball-Rolling Game
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.2009167, g: 0.48179874, b: 0.990566, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.64028865, g: 0.19999997, b: 0.99215686, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 0.805
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
   m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
