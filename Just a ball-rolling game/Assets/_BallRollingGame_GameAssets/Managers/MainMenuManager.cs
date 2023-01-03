@@ -32,8 +32,7 @@ public class MainMenuManager : MonoBehaviour
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.SetInt("FirstPlay", 1);
         LeavingScene();
-        LevelLoader.instance.LoadSceneAsync(
-            PlayerPrefs.GetInt("LastLevelPlayed", 1));
+        LevelLoader.instance.LoadSceneAsync(PlayerPrefs.GetInt("LastLevelPlayed", 1));
     }
     
     public void LevelSelectionButton()
