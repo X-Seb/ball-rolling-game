@@ -21,6 +21,7 @@ public class playerVictory : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex != _lastLevelBuildIndex)
         {
             PlayerPrefs.SetInt("Level_" + (_level.levelBuildIndex + 1).ToString() + "_Unlocked", 1);
+            PlayerPrefs.SetInt("FarthestLevelReached", _level.levelBuildIndex + 1);
         }
 
         //Record the player's time to complete the level, since they never finished it before

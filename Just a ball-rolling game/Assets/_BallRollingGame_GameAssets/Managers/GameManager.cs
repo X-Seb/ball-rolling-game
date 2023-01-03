@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("Level_1_Unlocked"))
         {
             PlayerPrefs.SetInt("Level_1_Unlocked", 1);
+            PlayerPrefs.SetInt("FarthestLevelReached", 1);
             PlayerPrefs.Save();
         }
     }
