@@ -7,7 +7,6 @@ public class PlayerGameOver : MonoBehaviour
 {
     public void PlayerDied()
     {
-        //TODO: music fade-out, death music fades-in
         //TODO: Make the player explode!
         Debug.Log("The player just died.");
 
@@ -18,7 +17,6 @@ public class PlayerGameOver : MonoBehaviour
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.EXPLOSION, 1.0f);
         AudioSingleton.Instance.SetVolumeGradually(0.0f, 3.0f);
 
-        //Changes the game state
         GameManager.instance.SetGameState(GameManager.GameState.PLAYER_DIED_TRANSITION);
 
         StartCoroutine(WaitForAnimation());

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//TODO: This script manages interactions with the buttons at the bottom of the level selection screen.
-//TODO: It allows you to switch between the level information shown.
+//This script manages interactions with the buttons at the bottom of the level selection screen.
 public class LevelSelectionManager : MonoBehaviour
 {
 
@@ -13,7 +12,6 @@ public class LevelSelectionManager : MonoBehaviour
     [SerializeField] private LevelInfoDisplay _display2;
     [SerializeField] private LevelInfoDisplay _display3;
     [SerializeField] private LevelInfoDisplay _display4;
-
 
     [Header("The index of the current level set: ")]
     [SerializeField] private int _currentLevelSet = 1;

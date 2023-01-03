@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+//This script sets a maximum speed for a rigidbody in all directions
 public class LimitRigidbodySpeed : MonoBehaviour
 {
-    public float maxSpeed = 10f;
-    public bool isInformationTextActive = false;
-    public Rigidbody rb;
+    [SerializeField] float maxSpeed = 10f;
+    [SerializeField] bool isInformationTextActive = false;
+    [SerializeField] Rigidbody rb;
 
     void Update()
     {
@@ -18,6 +20,7 @@ public class LimitRigidbodySpeed : MonoBehaviour
 
     void OnGUI()
     {
+        //Displays the rigidbody's velocity if "isInformationTextActive" bool is true
         if (isInformationTextActive)
         {
             GUI.Label(new Rect(20, 20, 200, 200), "rigidbody velocity: " + rb.velocity);

@@ -5,7 +5,6 @@ using UnityEngine;
 //This is a Singleton that managed all the audio in the game.
 //It plays random SFX from the lists.
 //Each level has a different _levelBackgroundMusic so each level will have different background music
-
 public class AudioSingleton : MonoBehaviour
 {
     public static AudioSingleton Instance;

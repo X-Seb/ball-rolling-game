@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-//This class holds the function that's called when the player triggers the win condition
+//This script holds the function that makes the player win
 public class playerVictory : MonoBehaviour
 {
-    [Header("Scripts: ")]
     [SerializeField] private Level _level;
     [SerializeField] private GameTimer _gameTimer;
+    [SerializeField] private int _lastLevelBuildIndex = 8;
 
     public void PlayerWon()
     {
         Debug.Log("The player just won the game!");
-        //Save the fact that the player just finished this level and which stars they just collected
+
+        //Save the fact that the player just finished this level
         PlayerPrefs.SetInt("Level_" + _level.levelBuildIndex.ToString() + "_Completed", 1);
-        PlayerPrefs.SetInt("Level_" + (_level.levelBuildIndex + 1).ToString() + "_Unlocked", 1);
+
+        //If you're not already at the last level, unlock the next one
+        if (SceneManager.GetActiveScene().buildIndex != _lastLevelBuildIndex)
+        {
+            PlayerPrefs.SetInt("Level_" + (_level.levelBuildIndex + 1).ToString() + "_Unlocked", 1);
+        }
 
         //Record the player's time to complete the level, since they never finished it before
         if (!PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex.ToString() + "_FastestTime"))

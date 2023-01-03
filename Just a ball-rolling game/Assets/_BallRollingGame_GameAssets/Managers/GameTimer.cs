@@ -34,6 +34,7 @@ public class GameTimer : MonoBehaviour
             _totalElapsedTime += Time.deltaTime;
         }
 
+        //Changes the background color of the time left depending on how much time you have left to finish the level
         _timeText.text = Mathf.Floor(_timeLeft).ToString();
 
         if (_timeLeft >= 30)
@@ -48,6 +49,8 @@ public class GameTimer : MonoBehaviour
         {
             _background.color = Color.red;  
         }
+
+        //When you're out of time, you die (that's life bro)
         if (_timeLeft <= 0)
         {
             playerGameOver.PlayerDied();

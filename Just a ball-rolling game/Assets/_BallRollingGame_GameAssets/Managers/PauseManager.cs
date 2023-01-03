@@ -7,7 +7,6 @@ public class PauseManager : MonoBehaviour
 {
     private void Start()
     {
-        //TODO: Set the time to 0 and set it to 1 when the game starts
         Time.timeScale = 1.0f;
     }
 
