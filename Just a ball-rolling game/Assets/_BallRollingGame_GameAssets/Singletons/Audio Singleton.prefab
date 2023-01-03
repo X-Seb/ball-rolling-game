@@ -221,7 +221,16 @@ MonoBehaviour:
     type: 3}
   _startingMenuBackgroundMusic: {fileID: 8300000, guid: b2bc6bc3d7eed4299a27ed683c5fd3c1,
     type: 3}
-  _levelBackgroundMusic: {fileID: 0}
+  _levelBGM:
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
+  - {fileID: 8300000, guid: 7f82dca14a1c54c44a301019a40b7f59, type: 3}
 --- !u!1 &104265562291988279
 GameObject:
   m_ObjectHideFlags: 0

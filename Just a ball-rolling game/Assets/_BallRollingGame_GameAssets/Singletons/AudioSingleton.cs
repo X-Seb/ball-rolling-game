@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //This is a Singleton that managed all the audio in the game.
 //It plays random SFX from the lists.
@@ -13,19 +14,19 @@ public class AudioSingleton : MonoBehaviour
     [SerializeField] private AudioSource _sfxAudioSource;
     [SerializeField] private AudioSource _musicAudioSource;
 
-    [Header("List of sound clip lists: ")]
+    [Header("List of sound clip arrays: ")]
     [SerializeField] private AudioClip[] _explosionAudioClips;
     [SerializeField] private AudioClip[] _achievementAudioClips;
     [SerializeField] private AudioClip[] _buttonAudioClips;
     [SerializeField] private AudioClip[] _collisionAudioClips;
 
-    [Header("Other audio clips: (these should always be the same)")]
+    [Header("Other music audio clips for the level scenes: ")]
     [SerializeField] private AudioClip _sadBackgroundMusic;
     [SerializeField] private AudioClip _victoryBackgroundMusic;
     [SerializeField] private AudioClip _startingMenuBackgroundMusic;
 
-    [Header("Scene-Specific audio clips: (Should be different for every scene)")]
-    [SerializeField] private AudioClip _levelBackgroundMusic;
+    [Header("Array that holds the background music audio clip for each scene: ")]
+    [SerializeField] private AudioClip[] _levelBGM;
 
     //This makes this class a singleton
     private void Awake()
@@ -94,7 +95,7 @@ public class AudioSingleton : MonoBehaviour
                 _musicAudioSource.clip = _victoryBackgroundMusic;
                 break;
             case Music.LEVEL_MUSIC:
-                _musicAudioSource.clip = _levelBackgroundMusic;
+                _musicAudioSource.clip = _levelBGM[SceneManager.GetActiveScene().buildIndex];
                 break;
             case Music.MENU:
                 _musicAudioSource.clip = _startingMenuBackgroundMusic;
