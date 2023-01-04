@@ -15,6 +15,8 @@ public class MainMenuManager : MonoBehaviour
     public GameObject howToPlayMenu;
     [Header("Text: ")]
     [SerializeField] private TextMeshProUGUI _continueText;
+    [Header("Scripts: ")]
+    [SerializeField] private LevelSelectionManager _levelSelectionManager;
 
     private void Start()
     {
@@ -32,7 +34,7 @@ public class MainMenuManager : MonoBehaviour
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.SetInt("FirstPlay", 1);
         LeavingScene();
-        LevelLoader.instance.LoadSceneAsync(PlayerPrefs.GetInt("LastLevelPlayed", 1));
+        LevelLoader.instance.LoadSceneAsync(PlayerPrefs.GetInt("FarthestLevelReached", 1));
     }
     
     public void LevelSelectionButton()
@@ -40,6 +42,7 @@ public class MainMenuManager : MonoBehaviour
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         levelSelectionMenu.SetActive(true);
         mainMenu.SetActive(false);
+        _levelSelectionManager.SetLevels(1);
     }
 
     public void SettingsButton()

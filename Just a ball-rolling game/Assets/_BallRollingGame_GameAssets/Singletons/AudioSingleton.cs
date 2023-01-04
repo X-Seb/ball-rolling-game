@@ -90,15 +90,19 @@ public class AudioSingleton : MonoBehaviour
         {
             case Music.SAD:
                 _musicAudioSource.clip = _sadBackgroundMusic;
+                Debug.Log("Now playing sad music");
                 break;
             case Music.VICTORY:
                 _musicAudioSource.clip = _victoryBackgroundMusic;
+                Debug.Log("Now playing victory music");
                 break;
             case Music.LEVEL_MUSIC:
                 _musicAudioSource.clip = _levelBGM[SceneManager.GetActiveScene().buildIndex];
+                Debug.Log("Now playing the level's background music");
                 break;
             case Music.MENU:
                 _musicAudioSource.clip = _startingMenuBackgroundMusic;
+                Debug.Log("Now playing the starting menu background music");
                 break;
             default:
                 break;

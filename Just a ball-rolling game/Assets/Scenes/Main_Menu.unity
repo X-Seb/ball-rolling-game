@@ -8495,7 +8495,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- PlayerPrefs Editor
 
-    - DoTween
+    - DOTween
 
     - Hierarchy 2'
   m_isRightToLeft: 0
@@ -18572,8 +18572,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- UI button pack 3\n- Scalable Grid \n  Prototype Materials\n- Fantasy
-    Skybox FREE\n- LowPoly Rocks"
+  m_text: "- UI button pack 3\n- Scalable Grid \n   Prototype Materials\n- Fantasy
+    Skybox FREE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -36597,6 +36597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMixer: {fileID: 24100000, guid: ea89764504f1d4b38ac1c8b43ffebfc7, type: 2}
   _slider: {fileID: 1268850507}
+  _dropdown: {fileID: 1512645862}
 --- !u!1 &1835707250
 GameObject:
   m_ObjectHideFlags: 0
@@ -37568,6 +37569,7 @@ MonoBehaviour:
   creditsMenu: {fileID: 4805738}
   howToPlayMenu: {fileID: 151339794}
   _continueText: {fileID: 2018489490}
+  _levelSelectionManager: {fileID: 0}
 --- !u!1 &1893095491
 GameObject:
   m_ObjectHideFlags: 0

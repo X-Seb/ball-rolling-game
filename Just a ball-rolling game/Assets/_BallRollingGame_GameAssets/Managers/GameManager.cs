@@ -27,6 +27,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        //Unlocks the first level if you never played before
+        if (!PlayerPrefs.HasKey("Level_1_Unlocked"))
+        {
+            PlayerPrefs.SetInt("Level_1_Unlocked", 1);
+            PlayerPrefs.SetInt("FarthestLevelReached", 1);
+            PlayerPrefs.Save();
+        }
+
         instance = this;
     }
 
@@ -35,14 +43,6 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             SetGameState(GameState.MAIN_MENU_SCENE);
-        }
-
-        //Unlocks the first level if you never played before
-        if (!PlayerPrefs.HasKey("Level_1_Unlocked"))
-        {
-            PlayerPrefs.SetInt("Level_1_Unlocked", 1);
-            PlayerPrefs.SetInt("FarthestLevelReached", 1);
-            PlayerPrefs.Save();
         }
     }
 

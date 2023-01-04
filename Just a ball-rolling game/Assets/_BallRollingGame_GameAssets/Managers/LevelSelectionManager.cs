@@ -19,6 +19,7 @@ public class LevelSelectionManager : MonoBehaviour
     //This script should be called by the buttons that change the levels
     public void SetLevels(int buttonNumber)
     {
+        AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         _currentLevelSet = buttonNumber;
 
         _display1.SetAllLevelInfo(buttonNumber);

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+
+//This script rotates a game object by the values set by the user
 public class RotateGameObject : MonoBehaviour
 {
     [Header("The game object to move: ")]
