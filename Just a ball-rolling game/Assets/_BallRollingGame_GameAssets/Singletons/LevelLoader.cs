@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using TMPro;
-using UnityEditor.SearchService;
 
 //This is a Singleton that allows you to switch between scenes.
 //It also activates the loading bar canvas to display the progress.
