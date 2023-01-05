@@ -74,7 +74,7 @@ public class LevelInfoDisplay : MonoBehaviour
             _playButton.interactable = false;
         }
 
-        if (_level.levelUnlocked)
+        if (_level.levelUnlocked || PlayerPrefs.HasKey("Level_" + _level.levelBuildIndex + "_Unlocked"))
         {
             _playButton.interactable = true;
         }
