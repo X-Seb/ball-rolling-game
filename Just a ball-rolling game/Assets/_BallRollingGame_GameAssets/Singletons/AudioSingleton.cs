@@ -80,7 +80,6 @@ public class AudioSingleton : MonoBehaviour
                 break;
             default:
                 break;
-
         }
     }
 
@@ -121,7 +120,6 @@ public class AudioSingleton : MonoBehaviour
         float timeElapsed = 0.0f;
         float startValue = _musicAudioSource.volume;
 
-
         while (timeElapsed < lerpDuration)
         {
             _musicAudioSource.volume = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
@@ -135,6 +133,7 @@ public class AudioSingleton : MonoBehaviour
 
     public void StopMusic()
     {
+        //Checks if the audio source is playing music before stopping it
         if (_musicAudioSource.clip != null || _musicAudioSource != null)
         {
             _musicAudioSource.Stop();

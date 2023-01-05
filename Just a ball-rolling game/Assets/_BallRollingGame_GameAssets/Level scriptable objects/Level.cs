@@ -37,6 +37,7 @@ public class Level : ScriptableObject
     {
         SetLevelData();
     }
+
     public void SetLevelData()
     {
         levelCompleted = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Completed");

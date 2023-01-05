@@ -54,6 +54,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void QuitButton()
     {
+        //This will close the application
         AudioSingleton.Instance.PlaySoundEffect(AudioSingleton.SoundEffect.BUTTON, 0.8f);
         PlayerPrefs.Save();
         Application.Quit();
