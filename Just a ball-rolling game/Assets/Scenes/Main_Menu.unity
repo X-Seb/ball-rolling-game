@@ -37569,7 +37569,7 @@ MonoBehaviour:
   creditsMenu: {fileID: 4805738}
   howToPlayMenu: {fileID: 151339794}
   _continueText: {fileID: 2018489490}
-  _levelSelectionManager: {fileID: 0}
+  _levelSelectionManager: {fileID: 1218857777}
 --- !u!1 &1893095491
 GameObject:
   m_ObjectHideFlags: 0
