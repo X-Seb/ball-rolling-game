@@ -22215,6 +22215,11 @@ PrefabInstance:
       objectReference: {fileID: 802638351}
     - target: {fileID: 7978122632517837942, guid: ac2c662529cb64d63897a57c6c290204,
         type: 3}
+      propertyPath: _lastLevelBuildIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978122632517837942, guid: ac2c662529cb64d63897a57c6c290204,
+        type: 3}
       propertyPath: startingScreenAnimator
       value: 
       objectReference: {fileID: 629726755}
