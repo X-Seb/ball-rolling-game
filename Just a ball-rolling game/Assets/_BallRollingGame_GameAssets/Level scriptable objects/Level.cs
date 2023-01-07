@@ -30,6 +30,16 @@ public class Level : ScriptableObject
 
     private void OnEnable()
     {
+        SetLevelData();
+    }
+
+    private void OnDisable()
+    {
+        SetLevelData();
+    }
+
+    public void SetLevelData()
+    {
         levelCompleted = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Completed");
         levelUnlocked = PlayerPrefs.HasKey("Level_" + levelBuildIndex.ToString() + "_Unlocked");
 
