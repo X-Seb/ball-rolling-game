@@ -64,7 +64,7 @@ public class LevelLoader : MonoBehaviour
     }
 
     //This functions loads the next scene
-    public async void LoadSceneAsync(int sceneBuildIndex)
+    private IEnumerator LoadScene(int sceneBuildIndex)
     {
         Debug.Log("Starting to load the next scene");
 
@@ -104,7 +104,7 @@ public class LevelLoader : MonoBehaviour
         } while (scene.progress < 0.9f);
 
         //Wait one and a half seconds before changing scenes and reseting everything
-        await Task.Delay(1500);
+        yield return new WaitForSeconds(1.5f);
         AudioSingleton.Instance.StopMusic();
 
         Debug.Log("Scene loaded!");
@@ -117,8 +117,13 @@ public class LevelLoader : MonoBehaviour
         targetSliderValue = 0;
         slider.value = 0;
 
-        await Task.Delay(100);
+        yield return new WaitForSeconds(1.5f);
         GetMainMenuManager();
+    }
+
+    public void LoadSceneAsync(int sceneBuildIndex)
+    {
+        StartCoroutine(LoadScene(sceneBuildIndex));
     }
 
     private void RandomizeFunnyText()
